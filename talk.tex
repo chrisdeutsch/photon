@@ -1,0 +1,86 @@
+\documentclass[12pt,xcolor=dvipsnames,professionalfonts]{beamer}
+
+% Pakete
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% AMS Pakete
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Einheiten
+\usepackage{siunitx}
+\sisetup{
+	separate-uncertainty
+}
+
+% Grafiken
+\usepackage{graphicx}
+\usepackage{tabularx}
+\setbeamerfont{caption}{size=\footnotesize}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+% Theme
+\usetheme{Boadilla}
+\usecolortheme{rose}
+\useoutertheme{infolines}
+\useinnertheme{rectangles}
+\setbeamertemplate{itemize subitem}[triangle]
+
+\usefonttheme[onlymath]{serif}
+
+% [num] Zitationen
+\setbeamertemplate{bibliography item}[text]
+
+% Navigationsleiste ausschalten
+\beamertemplatenavigationsymbolsempty
+
+\author[Christopher Deutsch]
+{Christopher Deutsch}
+
+\title
+{Interactions of photons with matter}
+
+\subtitle
+{}
+%\logo{}
+
+\institute[]
+{Rheinische Friedrich-Wilhelms-Universität Bonn \\
+Seminar on Detectors in Nuclear and Particle Physics -- Summer 16}
+
+\date{5. May 2016}
+
+%\setbeamercovered{transparent}
+%\setbeamertemplate{navigation symbols}{}
+
+\newcommand{\beginbackup}{
+	\newcounter{framenumbervorappendix}
+	\setcounter{framenumbervorappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+	\addtocounter{framenumbervorappendix}{-\value{framenumber}}
+	\addtocounter{framenumber}{\value{framenumbervorappendix}} 
+}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Contents}
+	\tableofcontents
+\end{frame}
+
+\begin{frame}{Bibliography}
+	\begin{thebibliography}{9}
+	\end{thebibliography}
+\end{frame}
+
+\beginbackup
+
+\begin{frame}{Appendix}
+\end{frame}
+
+\backupend
+
+\end{document}
