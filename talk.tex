@@ -20,6 +20,7 @@
 \usepackage{tabularx}
 \setbeamerfont{caption}{size=\footnotesize}
 \setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\usepackage[percent]{overpic}
 
 % Theme
 \usetheme{Boadilla}
@@ -257,13 +258,7 @@
 		\end{align*}
 		\begin{itemize}
 			\item depends on material \& photon energy
-		\end{itemize}
-		
-		
-		
-		
-
-		
+		\end{itemize}		
 	\end{itemize}	
 \end{frame}
 
@@ -280,21 +275,28 @@
 
 \begin{frame}{Interaction processes}
 	\centering
-	\includegraphics[scale=0.9]{./figures/carbon.pdf}
-\end{frame}
-\begin{frame}{Interaction processes}
-	\centering
-	\includegraphics[scale=0.9]{./figures/lead.pdf}
+	\begin{overpic}[scale=0.9]{./figures/carbon.pdf}
+		\put(80, -4){\footnotesize \cite{pdg}, modified}
+	\end{overpic}
 \end{frame}
 
-\begin{frame}{Interaction processes}
-	dominant interactions at photon energies $E_\gamma$?\\
-	dominant interactions for atomic number $Z$?
+\note[itemize]{
+	\item Careful! $\sigma_\mathrm{Compton}$ is per atom
+	
+	\item dominant interactions at photon energies $E_\gamma$?\\
+	\item dominant interactions for atomic number $Z$?
 	\begin{itemize}
 		\item photoelectric effect: $E_\gamma < \SI{1}{MeV}$
 		\item Compton scattering: $E_\gamma \approx \SI{1}{MeV}$
 		\item pair production: $E_\gamma > \SI{1}{MeV}$
 	\end{itemize}
+}
+
+\begin{frame}{Interaction processes -- later}
+	\centering
+	\begin{overpic}[scale=0.9]{./figures/lead.pdf}
+		\put(80, -4){\footnotesize \cite{pdg}, modified}
+	\end{overpic}
 \end{frame}
 
 \subsection{Photoelectric effect}
@@ -352,6 +354,11 @@
 
 \begin{frame}{Bibliography}
 	\begin{thebibliography}{1000}
+		\bibitem[PDG]{pdg}
+			K.A. Olive \textit{et al.} (Particle Data Group),
+			\emph{The Review of Particle Physics},
+			Chin.\ Phys.\ C, \textbf{38}, 090001 (2014) and 2015 update.
+		
 		\bibitem[Leo]{leo}
 			W.\ R.\ Leo,
 			\emph{Techniques for Nuclear and Particle Physics Experiments},
@@ -363,7 +370,7 @@
 			published in K.\ Siegbahn (ed.),
 			\emph{Alpha- Beta- and Gamma-Ray Spectroscopy}, North-Holland Publishing Company (1979).
 		
-		\bibitem[PDG]{pdg}
+
 	\end{thebibliography}
 \end{frame}
 
