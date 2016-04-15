@@ -1,4 +1,4 @@
-\documentclass[11pt,xcolor=dvipsnames,professionalfonts]{beamer}
+\documentclass[11pt,xcolor=dvipsnames,professionalfonts,notes]{beamer}
 
 % Pakete
 \usepackage[utf8]{inputenc}
@@ -47,8 +47,7 @@
 %\logo{}
 
 \institute[]
-{Rheinische Friedrich-Wilhelms-Universität Bonn \\
-Seminar on Detectors in Nuclear and Particle Physics -- SS16}
+{Joint BCGS Seminar on Detectors in Nuclear and Particle Physics\\ Summer Term 16}
 
 \date{2.\ May 2016}
 
@@ -71,28 +70,27 @@ Seminar on Detectors in Nuclear and Particle Physics -- SS16}
 	\tableofcontents
 \end{frame}
 
-\begin{frame}{Keywords}
-	\begin{itemize}
-		\item Photoelectric effect
-		
-		\item Compton effect
-		
-		\item Pair production
-		
-		\item Electromagnetic showers
-		
-		\item Detector concepts		
-	\end{itemize}
-\end{frame}
+\note[itemize]{
+	\item Photoelectric effect
+	
+	\item Compton effect
+	
+	\item Pair production
+	
+	\item Electromagnetic showers
+	
+	\item Detector concepts		
+}
 
 \section{Introduction}
 
 \subsection{Charged particle interaction}
 
-\begin{frame}{Introduction -- Interactions of charged particles with matter}
-	last week: interactions of charged particles with matter
+\begin{frame}{Introduction -- charged particle interactions}
+	Interaction of \textbf{charged particles} with matter:
 	\begin{itemize}
 		\item energy loss due to inelastic collisions with atomic electrons
+		\item range $R$
 	\end{itemize}
 	\vfill
 	\begin{center}
@@ -100,78 +98,183 @@ Seminar on Detectors in Nuclear and Particle Physics -- SS16}
 	\end{center}
 \end{frame}
 
+\note[itemize]{
+	\item charged particles
+	\begin{itemize}
+		\item fixed range
+	\end{itemize}
+	
+	\item photons
+	\begin{itemize}
+		\item uncharged
+	\end{itemize}
+}
+
 
 \subsection{Photon interaction}
 
-\begin{frame}{Introduction -- Interactions of photons with matter}
-	Today: photons (whats different?)
-	\begin{itemize}
-		\item uncharged
-		
-		\item relevant processes: photoelectric effect, compton scattering, pair production (etc.?) (why?)
-		
-		\item more penetrating than charged particles 
-		\begin{itemize}
-			\item lower cross section than inelastic electron collision
-		\end{itemize}
-		
-		\item single photons in a beam don not lose energy, but the intensity of the beam drops
-		\begin{itemize}
-			\item interaction removes photon from beam entirely
-			
-			\item Lambert-Beer law ("derive"):
-			\begin{align*}
-				I(x) = I_0 \, e^{- \mu x}
-			\end{align*}
-			
-			\item compare with stopping power for charged particles
-		\end{itemize}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Lambert-Beer law}
+\begin{frame}{Introduction -- photon interactions}
 	\begin{columns}
-		\column[t]{0.6\textwidth}
-			\begin{itemize}
-				\item charge
-			\end{itemize}
-		
-		\column[t]{0.4\textwidth}		
+		\column[c]{0.4\textwidth}
 			\begin{center}
-				\includegraphics{./figures/lambert_beer.pdf}
+				\includegraphics{./figures/photoeffect_intro.pdf}
 			\end{center}
-			\begin{align*}
-				\mathrm{d} I = - \mu I \mathrm{d}x
-			\end{align*}
-			
-			Lambert-Beer law:
-			\begin{align*}
-				I(x) = I_0 \, e^{-\mu x}
-			\end{align*}
+		
+		\column[c]{0.6\textwidth}
+			Photoelectric effect
+	\end{columns}
+	\vspace{-0.2cm}
+	\begin{columns}
+		\column[c]{0.4\textwidth}
+		\begin{center}
+			\includegraphics{./figures/compton_intro.pdf}
+		\end{center}
+		
+		\column[c]{0.6\textwidth}
+		Compton effect
+	\end{columns}
+	\vspace{0.2cm}
+	\begin{columns}
+		\column[c]{0.4\textwidth}
+		\begin{center}
+			\includegraphics{./figures/pair_intro.pdf}
+		\end{center}
+		
+		\column[c]{0.6\textwidth}
+		Pair production
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Absorption coefficient}
+\note[itemize]{
+	\item (independent) proccesses relevant in energy range (\si{keV} -- \si{GeV}) for nuclear \& detector physics
+	
+	\item photoelectric effect:
 	\begin{itemize}
+		\item photon absorbed by atomic electron
+		\item electron liberated
+		\item dominant at low energies
+	\end{itemize}
+	
+	\item compton scattering:
+	\begin{itemize}
+		\item scattering of photons at free / quasifree electrons
+		\item dominant at intermediate energies
+	\end{itemize}
+	
+	\item pair production:
+	\begin{itemize}
+		\item $\mathrm{e}^+ \mathrm{e}^-$ production in Coulomb field
+		\item dominant at high energies
+	\end{itemize}
+	
+	\item other processes:
+	\begin{itemize}
+		\item Thomson \& Rayleigh scattering (?)
+	\end{itemize}
+}
+
+\begin{frame}{Introduction -- Lambert-Beer law}
+	\begin{columns}
+		\column[t]{0.6\textwidth}
+		Photon beam passing through matter:
+			\begin{itemize}
+				\item interaction removes $\gamma$ from beam by absorption or scattering
+				\begin{itemize}
+					\item individual $\gamma$ do not lose energy
+					\item beam intensity is attenuated
+				\end{itemize}
+				
+				\item attenuation:
+				\begin{align*}
+					\mathrm{d} I = - \mu I \mathrm{d}x
+				\end{align*}
+				\begin{itemize}
+					\item Lambert-Beer law:
+					\begin{align*}
+					I(x) = I_0 \, e^{-\mu x}
+					\end{align*}
+				\end{itemize}
+				
+				
+				\item mean free path
+				\begin{align*}
+					\lambda = \frac{1}{\mu}
+				\end{align*}
+			\end{itemize}
+
+		\column[t]{0.4\textwidth}		
+			\begin{center}
+				\includegraphics{./figures/lambert_beer.pdf}
+			\end{center}			
+	\end{columns}
+\end{frame}
+
+\note[itemize]{
+	\item absorption coefficient material and energy dependent 
+}
+
+\begin{frame}{Introduction -- range comparison}
+	
+	\begin{columns}
+		\column[t]{0.5\textwidth}
+		\centering
+		\hspace{1cm}\textbf{charged particles:}
+		
+		\vspace{0.5cm}
+		
+		\includegraphics[width=1.0\textwidth]{./figures/range.pdf}
+		
+		\column[t]{0.5\textwidth}
+		\centering
+		\hspace{1cm}\textbf{photons:}
+		
+		\vspace{0.5cm}
+		
+		\includegraphics[width=1.0\textwidth]{./figures/lambert_beer_exp.pdf}
+		
+	\end{columns}
+\end{frame}
+
+\note[itemize]{
+	\item charged particles gradually lose energy until stop at a fixed range
+	\item photons don't lose energy but are absorbed or scattered from the beam	
+}
+
+
+\begin{frame}{Introduction - absorption coefficient}
+	\begin{itemize}
+		\setlength\itemsep{2.em}
 		\item absorption coefficient
 		\begin{align*}
 			\mu = n \sigma
 		\end{align*}
-		density of atoms $n$, total absorption/scattering cross section $\sigma$ per atom
+		$n$: density of atoms \\
+		$\sigma$: total absorption / scattering cross section per atom
 		
-		\item mean free path
+		\item cross section per atom
 		\begin{align*}
-			\lambda = \frac{1}{\mu}
+			\sigma = \sigma_\mathrm{photo} + Z \cdot \sigma_\mathrm{C} + \sigma_\mathrm{pair}
 		\end{align*}
+		\begin{itemize}
+			\item depends on material / photon energy
+		\end{itemize}
 		
-		\item cross section per atom ($Z$?) (processes independent)
-		\begin{align*}
-			\sigma = \sigma_\mathrm{photo} + Z \cdot \sigma_\mathrm{Compton} + \sigma_\mathrm{pair}
-		\end{align*}
 		
-		\item contains dependence on material/photon energy
+		
+		
+
+		
 	\end{itemize}	
 \end{frame}
+
+\note[itemize]{
+	\item ($Z$?) (processes independent)
+	
+	\item higher penetration power
+	\begin{itemize}
+		\item smaller cross section cmp.\ inelastic $\mathrm{e}^-$ collision
+	\end{itemize} 
+}
 
 \section{Interaction processes}
 

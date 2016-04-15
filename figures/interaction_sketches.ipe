@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160414161437" modified="D:20160414170014"/>
+<info created="D:20160414161437" modified="D:20160415092728"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -255,7 +255,10 @@ h
 <layer name="photo"/>
 <layer name="compton"/>
 <layer name="pair"/>
-<view layers="photo compton pair" active="pair"/>
+<layer name="photo_ann"/>
+<layer name="compton_ann"/>
+<layer name="pair_ann"/>
+<view layers="photo" active="pair_ann"/>
 <path layer="photo" matrix="1 0 0 1 32 0" stroke="black" fill="0.894 0.102 0.11" pen="0.7">
 8 0 0 8 128 736 e
 </path>
@@ -572,7 +575,7 @@ h
 <text matrix="1 0 0 1 -8 1" transformations="translations" pos="112 764" stroke="black" type="label" width="6.254" height="4.698" depth="2.12" valign="baseline" size="11">$\gamma$</text>
 <text transformations="translations" pos="160 736" stroke="black" type="label" width="13.307" height="7.455" depth="0" halign="center" valign="center" size="11">$Z e$</text>
 <text matrix="1 0 0 1 12 1" transformations="translations" pos="204 764" stroke="black" type="label" width="11.933" height="8.774" depth="0" halign="right" valign="baseline" size="11">$\mathrm{e}^-$</text>
-<text matrix="1 0 0 1 48 -8" transformations="translations" pos="112 704" stroke="black" type="label" width="117.393" height="8.775" depth="2.12" halign="center" valign="baseline" size="11">$\gamma + \mathrm{atom} \rightarrow \mathrm{e}^- + \mathrm{atom}^+$</text>
+<text layer="photo_ann" matrix="1 0 0 1 48 -8" transformations="translations" pos="112 704" stroke="black" type="label" width="117.393" height="8.775" depth="2.12" halign="center" valign="baseline" size="11">$\gamma + \mathrm{atom} \rightarrow \mathrm{e}^- + \mathrm{atom}^+$</text>
 <path layer="compton" matrix="1.75071 0 0 1.33288 256 760" stroke="black" pen="1">
 0 0 m
 0.084622 0.085855
@@ -1183,7 +1186,7 @@ h
 4 0 0 4 160 760 e
 </path>
 <text matrix="1 0 0 1 240 -19" transformations="translations" pos="112 764" stroke="black" type="label" width="9.049" height="8.388" depth="2.12" halign="right" valign="baseline" size="11">$\gamma^\prime$</text>
-<text matrix="1 0 0 1 192 16" transformations="translations" pos="112 704" stroke="black" type="label" width="80.01" height="8.775" depth="2.12" halign="center" valign="baseline" size="11">$ \gamma + \mathrm{e}^- \rightarrow \gamma + \mathrm{e}^- $</text>
+<text layer="compton_ann" matrix="1 0 0 1 192 16" transformations="translations" pos="112 704" stroke="black" type="label" width="80.01" height="8.775" depth="2.12" halign="center" valign="baseline" size="11">$ \gamma + \mathrm{e}^- \rightarrow \gamma + \mathrm{e}^- $</text>
 <path layer="pair" matrix="1.75071 0 0 1.33288 416 760" stroke="black" pen="1">
 0 0 m
 0.084622 0.085855
@@ -1503,6 +1506,6 @@ h
 </path>
 <text matrix="1 0 0 1 320 21" transformations="translations" pos="204 764" stroke="black" type="label" width="11.933" height="8.774" depth="0" halign="right" valign="baseline" size="11">$\mathrm{e}^-$</text>
 <text matrix="1 0 0 1 320 -19" transformations="translations" pos="204 764" stroke="black" type="label" width="11.933" height="8.774" depth="0" halign="right" valign="baseline" size="11">$\mathrm{e}^+$</text>
-<text matrix="1 0 0 1 348 -4" transformations="translations" pos="112 704" stroke="black" type="label" width="132.544" height="8.775" depth="2.12" halign="center" valign="baseline" size="11">$ \gamma + \mathrm{nucl.} \rightarrow \mathrm{e}^+ + \mathrm{e}^- + \mathrm{nucl.}$</text>
+<text layer="pair_ann" matrix="1 0 0 1 348 -4" transformations="translations" pos="112 704" stroke="black" type="label" width="132.544" height="8.775" depth="2.12" halign="center" valign="baseline" size="11">$ \gamma + \mathrm{nucl.} \rightarrow \mathrm{e}^+ + \mathrm{e}^- + \mathrm{nucl.}$</text>
 </page>
 </ipe>
