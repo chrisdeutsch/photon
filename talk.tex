@@ -8,12 +8,16 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{mathtools}
 
 % Einheiten
 \usepackage{siunitx}
 \sisetup{
 	separate-uncertainty
 }
+
+% Feynman
+\usepackage{feynmp}
 
 % Grafiken
 \usepackage{graphicx}
@@ -273,7 +277,7 @@
 
 \section{Interaction processes}
 
-\begin{frame}{Interaction processes}
+\begin{frame}{Interaction processes -- overview}
 	\centering
 	\begin{overpic}[scale=0.9]{./figures/carbon.pdf}
 		\put(80, -4){\footnotesize \cite{pdg}, modified}
@@ -299,7 +303,7 @@
 		\column[t]{0.6\textwidth}
 		\begin{itemize}
 			\setlength\itemsep{1.5em}
-			\item dominant for $E_\gamma \lesssim \SI{1}{MeV}$
+			\item dominant for $E_\gamma < 1 \, \mathrm{MeV}$
 			
 			\item absorption of $\gamma$ by atomic $\mathrm{e}^-$
 			\begin{itemize}
@@ -326,13 +330,30 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Photoelectric effect -- shell effects}
+\note[itemize]{
+	\item complete transfer of energy
+	\item nucleus required because of 4-momentum conservation
+	\item binding energy depends on atomic shell
+	\item recoil can be neglected since nucleus is heavy compared to electron
+}
+
+\begin{frame}{Photoelectric effect -- shell structure}
 	\begin{columns}
 		\column[c]{0.55\textwidth}
 		\begin{itemize}
-			\item binding energy $E_\mathrm{b}$ depends on atomic shell
+			\setlength\itemsep{1.5em}
+			\item $\sigma_\mathrm{photo}$ increases with increasing binding energy $E_\mathrm{b}$ of the electron
+			
+			\item atomic shell structure visible
+			\begin{itemize}
+				\item absorption edges
+			\end{itemize}
+			
+			\item K-shell dominant
+			\begin{align*}
+				\frac{\sigma_\mathrm{K}}{\sigma_\mathrm{L}} = 5 - 13
+			\end{align*}
 		\end{itemize}
-		
 		
 		\column[c]{0.45\textwidth}
 		\begin{overpic}[width=1.0\textwidth]{./figures/lead_edges.png}
@@ -343,32 +364,101 @@
 			\put(18, 94){\footnotesize \rmfamily L-Edges}
 			\put(60, -10){\footnotesize \cite{leo}, modified}
 		\end{overpic}
-		
 	\end{columns}
 \end{frame}
 
 \note[itemize]{
-	\item absorption of photon by atomic electron (illustration) (free electron -- forbidden: recoil momentum)
-	\item $E = h \nu - E_\mathrm{b}$
-	\item complete transfer of energy
-	\item cross section -- shell structure
+	\item 
+}
+
+\begin{frame}{Photoelectric effect -- cross section}
 	\begin{itemize}
-		\item absorption-edges
-		\item K-shell dominant for high energies
+		\setlength\itemsep{1.5em}
+		\item exact solution difficult
+		\begin{itemize}
+			\item infinite number of partial waves
+		\end{itemize}
+		\item approximate solution
+		\begin{itemize}
+			\item only K-shell electrons
+			\item non-relativistic final state electron			
+			\begin{align*}
+				&\sigma_\mathrm{photo} = \underbrace{4\sqrt{2} \alpha^4 \sigma_\mathrm{T} \alert{Z^5}  \left( \frac{m_\mathrm{e}c^2}{\alert{E_\gamma}} \right)^{\alert{\frac{7}{2}}}}_{\text{Born approximation}} \cdot \, \overbrace{f(Z, E_\gamma)}^{\mathclap{\substack{\text{correction}\\\text{near K-edge}}}} \\[1em]
+				&\sigma_\mathrm{T} = \frac{8 \pi}{3} r_0^2 \quad \text{(Thomson scattering)}
+			\end{align*}
+		\end{itemize}
 	\end{itemize}
-	nonrelativistic but $E_\gamma > E_\mathrm{b, K}$:
-	\begin{align*}
-	\sigma_\mathrm{photo} = \frac{32 \pi}{3} \sqrt{2} r_\mathrm{e}^2  \alpha^4  Z^5 \left( \frac{m_\mathrm{e} c^2}{E_\gamma}\right)^\frac{7}{2} 
-	\end{align*}	
+\end{frame}
+
+\note[itemize]{
+	\item $E_\mathrm{b}^\mathrm{K} < E_\gamma \ll m_\mathrm{e}c^2$
+	\item only K-shell justified (before: dominant)
+	\item photon energies less than electron rest mass
+	\item Born approximation: final state electron -- plane wave (neglects influence of nucleus)
+	\item near K-edge nucleus important: correction factor depending on $Z$ and $E_\gamma$
+}
+
+\begin{frame}{Photoelectric effect -- dependencies}
+	\begin{itemize}
+		\setlength\itemsep{1.5em}
+		\item non-relativistic case (incl.\ correction)
+		\begin{align*}
+		\sigma_\mathrm{photo} \propto Z^{4 \, \dots \, 5} \cdot E_\gamma^{n} \qquad n \leq - \frac{7}{2}
+		\end{align*}
+		
+		\item relativistic case
+		\begin{align*}
+			\sigma_\mathrm{photo} \propto \frac{Z^5}{E_\gamma}
+		\end{align*}
+		\begin{itemize}
+			\item non-rel.\ approximation generally sufficient -- Compton scattering
+		\end{itemize} 
+	\end{itemize}
+\end{frame}
+
+\note[itemize]{
+	\item non-rel.\ case: correction is for lower energies
+	
+	\item relativistic case: need to consider Dirac final state wavefunctions
+	
+	\item generally at energies \SI{250}{keV}, where relativistic effects become important -- Compton scattering is becoming   the  dominant interaction
+	
+	\item summing up: Photoeffect important for low $E$ high $Z$ -- Detectors build from high $Z$ material / Lead-shielding
+	
+	\item Angular distribution?: low E -- \SI{90}{\degree} (dipole radiation), high E -- forward direction
+	
+	\item side effect: Auger electrons, X-Ray $\gamma$'s
+	
+	\item Photopeak?
 }
 
 
 \subsection{Compton scattering}
 
+\begin{frame}{Interaction processes -- overview}
+	\centering
+	\begin{overpic}[scale=0.9]{./figures/carbon.pdf}
+		\put(80, -4){\footnotesize \cite{pdg}, modified}
+	\end{overpic}
+\end{frame}
+
 \begin{frame}{Compton scattering}
+\begin{columns}
+	\column[t]{0.6\textwidth}
 	\begin{itemize}
-		\item
+		\setlength\itemsep{1.5em}
+		\item dominant for $E_\gamma \approx 1 \, \mathrm{MeV}$
 	\end{itemize}
+	
+	\column[t]{0.4\textwidth}
+	\begin{center}
+		\includegraphics{./figures/compton_detail.pdf}
+		
+		Feynman-Graph?
+		
+		Angle?
+	\end{center}
+\end{columns}
 \end{frame}
 
 \subsection{Pair production}
