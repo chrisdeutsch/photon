@@ -295,21 +295,72 @@
 \subsection{Photoelectric effect}
 
 \begin{frame}{Photoelectric effect}
-	\begin{itemize}
-		\item absorption of photon by atomic electron (illustration) (free electron -- forbidden: recoil momentum)
-		\item $E = h \nu - E_\mathrm{b}$
-		\item complete transfer of energy
-		\item cross section -- shell structure
+	\begin{columns}
+		\column[t]{0.6\textwidth}
 		\begin{itemize}
-			\item absorption-edges
-			\item K-shell dominant for high energies
+			\setlength\itemsep{1.5em}
+			\item dominant for $E_\gamma \lesssim \SI{1}{MeV}$
+			
+			\item absorption of $\gamma$ by atomic $\mathrm{e}^-$
+			\begin{itemize}
+				\item nucleus absorbs recoil momentum
+			\end{itemize}
+			
+			\item energy threshold
+			\begin{align*}
+				E_\gamma > E_\mathrm{b}
+			\end{align*}
+
+			\item kinetic energy of $\mathrm{e}^-$ (neglect recoil)
+			\begin{align*}
+				T_\mathrm{e} = E_\gamma - E_\mathrm{b}
+			\end{align*}
 		\end{itemize}
-		nonrelativistic but $E_\gamma > E_\mathrm{b, K}$:
-		\begin{align*}
-			\sigma_\mathrm{photo} = \frac{32 \pi}{3} \sqrt{2} r_\mathrm{e}^2  \alpha^4  Z^5 \left( \frac{m_\mathrm{e} c^2}{E_\gamma}\right)^\frac{7}{2} 
-		\end{align*}		
-	\end{itemize}
+		
+		\column[t]{0.4\textwidth}
+		\begin{center}
+			\includegraphics{./figures/photoeffect_detail.pdf}
+			
+			Feynman-diagram?
+		\end{center}
+	\end{columns}
 \end{frame}
+
+\begin{frame}{Photoelectric effect -- shell effects}
+	\begin{columns}
+		\column[c]{0.55\textwidth}
+		\begin{itemize}
+			\item binding energy $E_\mathrm{b}$ depends on atomic shell
+		\end{itemize}
+		
+		
+		\column[c]{0.45\textwidth}
+		\begin{overpic}[width=1.0\textwidth]{./figures/lead_edges.png}
+			\put(20,20){\footnotesize \rmfamily Lead ($Z=82$)}
+			\put(39, -1){\footnotesize $E_\gamma \, / \, \mathrm{MeV}$}
+			\put(-2, 40){\rotatebox{90}{\footnotesize $\sigma_\mathrm{photo} \, / \, \mathrm{barn}$}}
+			\put(32, 80){\footnotesize \rmfamily K-Edge ($E_\gamma \approx \SI{88}{keV}$)}
+			\put(18, 94){\footnotesize \rmfamily L-Edges}
+			\put(60, -10){\footnotesize \cite{leo}, modified}
+		\end{overpic}
+		
+	\end{columns}
+\end{frame}
+
+\note[itemize]{
+	\item absorption of photon by atomic electron (illustration) (free electron -- forbidden: recoil momentum)
+	\item $E = h \nu - E_\mathrm{b}$
+	\item complete transfer of energy
+	\item cross section -- shell structure
+	\begin{itemize}
+		\item absorption-edges
+		\item K-shell dominant for high energies
+	\end{itemize}
+	nonrelativistic but $E_\gamma > E_\mathrm{b, K}$:
+	\begin{align*}
+	\sigma_\mathrm{photo} = \frac{32 \pi}{3} \sqrt{2} r_\mathrm{e}^2  \alpha^4  Z^5 \left( \frac{m_\mathrm{e} c^2}{E_\gamma}\right)^\frac{7}{2} 
+	\end{align*}	
+}
 
 
 \subsection{Compton scattering}
