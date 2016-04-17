@@ -16,9 +16,6 @@
 	separate-uncertainty
 }
 
-% Feynman
-\usepackage{feynmp}
-
 % Grafiken
 \usepackage{graphicx}
 \usepackage{tabularx}
@@ -448,6 +445,23 @@
 	\begin{itemize}
 		\setlength\itemsep{1.5em}
 		\item dominant for $E_\gamma \approx 1 \, \mathrm{MeV}$
+		
+		\item scattering of photon at free electron
+		\begin{itemize}
+			\item quasifree for $E_\gamma \gg E_\mathrm{b}$
+		\end{itemize}
+		
+		\item energy transfer from 4-momentum conservation
+		\begin{align*}
+			T_\mathrm{e} = E_\gamma \frac{\epsilon (1 - \cos\theta)}{1 + \epsilon (1 - \cos\theta)} \qquad \epsilon := \frac{E_\gamma}{m_\mathrm{e}c^2}
+		\end{align*}
+		\begin{itemize}
+			\item maximum for backscattering (Compton edge)
+			\begin{align*}
+				T_\mathrm{e, max} = E_\gamma \frac{2\epsilon}{1+ 2\epsilon}
+			\end{align*}
+		\end{itemize}
+		
 	\end{itemize}
 	
 	\column[t]{0.4\textwidth}
@@ -460,6 +474,35 @@
 	\end{center}
 \end{columns}
 \end{frame}
+
+\begin{frame}{Compton scattering -- cross section}
+	\begin{columns}
+		\column[c]{0.55\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{1.5em}
+			\item calculated by Klein-Nishina
+			
+			\item Klein-Nishina: $\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega}$
+		\end{itemize}
+		
+		\column[c]{0.45\textwidth}
+		\begin{center}
+			\includegraphics{./figures/compton_energytrans.pdf}
+		\end{center}
+		
+		
+	\end{columns}
+	
+\end{frame}
+
+\note[itemize]{
+	\item larger dominant range for small $Z$
+	\item Energy of scattered photon
+	\begin{align*}
+			E_\gamma^\prime = \frac{E_\gamma}{1 + \epsilon (1 - \cos\theta)} \\
+	\end{align*}
+
+}
 
 \subsection{Pair production}
 
