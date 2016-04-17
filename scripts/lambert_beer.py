@@ -10,7 +10,7 @@ y = np.exp(-x)
 plt.xlim(0.0, 5.0)
 plt.ylim(0.0, 1.1)
 
-plt.xlabel(r"position $x / \lambda$")
+plt.xlabel(r"depth $x$ / $\lambda$")
 plt.ylabel(r"relative count rate")
 
 plt.axhline(np.exp(-1.0), 0.0, 1. / 5.0, ls=":", c="k")

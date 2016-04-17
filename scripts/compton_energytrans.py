@@ -36,6 +36,6 @@ fig = plt.gcf()
 fig.set_size_inches(2.1, 2.3)
 plt.xticks([0.0, 0.5, 1.0, 1.5])
 
-plt.tight_layout(pad=0.1)
+plt.tight_layout(pad=0.2)
 plt.savefig("figures/compton_energytrans.pdf")
 plt.close()

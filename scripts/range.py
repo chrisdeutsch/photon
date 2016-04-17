@@ -13,7 +13,7 @@ y = 0.5 * erfc( (x - mu) / np.sqrt(2. * sigma**2))
 plt.xlim(0.0, 1.3)
 plt.ylim(0.0, 1.1)
 
-plt.xlabel(r"position $x / R$")
+plt.xlabel(r"depth $x$ / $R$")
 plt.ylabel(r"relative count rate")
 
 plt.axhline(0.5, 0.0, 1. / 1.3, ls=":", c="k")
