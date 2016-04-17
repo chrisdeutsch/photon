@@ -26,7 +26,7 @@ for E, I in zip(E, intensity):
 
 plt.xlim(0.0, 1.5)
 plt.xlabel("energy transfer $T_\mathrm{e}$ / \si{MeV}")
-plt.ylabel(r"$\frac{\mathrm{d}\sigma}{\mathrm{d} T_\mathrm{e}} / \text{a.u.}$")
+plt.ylabel(r"$\frac{\mathrm{d}\sigma}{\mathrm{d} T_\mathrm{e}}$ / a.u.")
 
 plt.tick_params(axis="y", labelleft="off")
 
