@@ -212,7 +212,8 @@
 \end{frame}
 
 \note[itemize]{
-	\item absorption coefficient material and energy dependent 
+	\item absorption coefficient material and energy dependent
+	\item absorption length plot (PDG) ?
 }
 
 \begin{frame}{Introduction -- range comparison}
@@ -305,7 +306,7 @@
 				\item nucleus absorbs recoil momentum
 			\end{itemize}
 			
-			\item energy threshold
+			\item threshold energy
 			\begin{align*}
 				E_\gamma > E_\mathrm{b}
 			\end{align*}
@@ -563,7 +564,7 @@
 		
 		\item $Z$ electrons per atom
 		\begin{align*}
-			\sigma_\mathrm{Compton} = Z \cdot \sigma
+			\sigma_\mathrm{Compton} = \alert{Z} \cdot \sigma
 		\end{align*}
 	\end{itemize}
 \end{frame}
@@ -596,6 +597,22 @@
 	\begin{itemize}
 		\setlength\itemsep{1.5em}
 		\item dominant for $E_\gamma > 1 \, \mathrm{MeV}$
+		
+		\item creation of $\mathrm{e}^- \mathrm{e}^+$-pair in a Coulomb field
+		\begin{itemize}
+			\item 4-momentum conservation requires third body (nucleus or electron)
+			\item generally negligible for electrons
+			\begin{align*}
+				\frac{\sigma_\mathrm{pair,\, nuc}}{\sigma_\mathrm{pair,\, e}} \approx Z
+			\end{align*}
+		\end{itemize}
+		
+		\item threshold energy (neglecting recoil)
+		\begin{align*}
+			E_\gamma > 2 m_\mathrm{e}c^2
+		\end{align*}
+		
+		
 	\end{itemize}
 	
 	\column[t]{0.4\textwidth}
@@ -603,6 +620,31 @@
 		\includegraphics{./figures/pair_detail.pdf}
 	\end{center}
 \end{columns}
+\end{frame}
+
+\note[itemize]{
+	\item Proof (momentum conservation):
+	\begin{align*}
+		&k = p_1 + p_2 \rightarrow k^2 = (p_1 + p_2)^2 = 0 \\
+		&0 = 2 m_\mathrm{e}^2 + 2 (E_1 E_2 - \vec{p}_1 \cdot \vec{p}_2) \geq 2 m_\mathrm{e}^2
+	\end{align*}
+	
+	\item pair production in field of electron only significant for light particles -- detectors generally large $Z$
+	
+	\item threshold energy larger for electrons -- larger recoil energy due to smaller mass	
+}
+
+\begin{frame}{Pair production -- relation to bremsstrahlung}
+	\begin{itemize}
+		\setlength\itemsep{1.5em}
+		\item pair production related to bremsstrahlung by crossing symmetry
+		
+		\item spoiler: radiation length $X_0$ is going to appear
+	\end{itemize}
+	\begin{columns}
+		\column[c]{0.5\textwidth}
+		\column[c]{0.5\textwidth}				
+	\end{columns}
 \end{frame}
 
 \begin{frame}{Interaction processes -- later}
