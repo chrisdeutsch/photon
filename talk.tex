@@ -10,6 +10,9 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 
+% Text tools
+\usepackage{textcomp}
+
 % Einheiten
 \usepackage{siunitx}
 \sisetup{
@@ -912,6 +915,11 @@
 	\item emphasize logarithmic increase of $t_\mathrm{max}$ -- nice to keep calorimeters \textit{small}
 	
 	\item important for energy measurement: total track length of charged particles -- proportional to energy
+	\begin{align*}
+		\sum_{t=0}^{t_\mathrm{max}} 2^t = 2^{t_\mathrm{max} + 1}
+	\end{align*}
+	
+	\item $t_{95\%}$ (?)
 }
 
 \begin{frame}{Electromagnetic showers -- lateral spread}
@@ -960,6 +968,8 @@
 	\item $1.25 \, \mathrm{cm}$ thick brass plates
 	\item placed in cloud chamber
 	\item high energy electron or photon $\mathcal{O}(\mathrm{GeV})$
+	
+	\item air showers (?)
 }
 
 
@@ -971,9 +981,12 @@
 		\item PMT (scintillation light)
 		\item Photodioden (PIN, avalanche)
 		\item hybrid detectors (?)
-		\item gaseous ionization detectors
 	\end{itemize}
 \end{frame}
+
+\note[itemize]{
+	\item no direct detection mechanism for photons\textrightarrow charged particle interaction mandatory
+}
 
 
 \begin{frame}{Bibliography}
@@ -1010,8 +1023,6 @@
 			W.\ Heitler,
 			\emph{The Quantum Theory of Radiation},
 			3rd edition, Oxford University Press (1954).
-		
-
 	\end{thebibliography}
 \end{frame}
 
