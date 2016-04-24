@@ -706,6 +706,8 @@
 		\item an electron loses $63\, \si{\percent}$ of its energy due to bremsstrahlung
 		\item a photon has a probability of $54 \si{\percent}$ to perform pair production
 	\end{itemize}
+	
+	\item LPM effect (?)
 }
 
 \begin{frame}{Interaction processes -- dependencies of the cross section}
@@ -786,11 +788,14 @@
 		\end{itemize}
 		
 		\item combined effect: cascade/shower of photons, electrons and positrons
+		
+		\item important mechanism for detecting photons in particle detectors
 	\end{itemize}
 \end{frame}
 
 \note[itemize]{
 	\item Picture of shower -- Blackett, Occhialini
+	\item photons are uncharged and do not leave tracks in tracking detectors
 }
 
 \begin{frame}{Electromagnetic showers}
@@ -864,6 +869,52 @@
 		\includegraphics<4>{./figures/shower_4.pdf}
 	\end{center}
 \end{frame}
+
+\begin{frame}{Electromagnetic showers -- Heitler's model}
+	\begin{columns}
+		\column[c]{0.5\textwidth}
+		Quantities extracted from Heitler's model:
+		\begin{itemize}
+			\setlength\itemsep{1.em}
+			\item number of particles at depth $t$
+			\begin{align*}
+				N(t) = 2^t
+			\end{align*}
+			
+			\item energy per particle
+			\begin{align*}
+				E(t) = \frac{E_0}{N(t)} = E_0 \cdot 2^{-t}
+			\end{align*}
+			
+			\item penetration depth $t_\mathrm{max}$ from $E(t_\mathrm{max}) = E_\mathrm{c}$
+			\begin{align*}
+				t_\mathrm{max} &= \log_2\left(\frac{E_0}{E_\mathrm{c}}\right)
+			\end{align*}
+		\end{itemize}
+		
+		\column[c]{0.5\textwidth}
+		\begin{center}
+			\includegraphics[width=1.0\textwidth]{./figures/shower_cascadeunits.pdf}
+		\end{center}
+	\end{columns}
+\end{frame}
+
+\note[itemize]{
+	\item doubles with each cascade unit -- exponential increase
+	
+	\item energy per particle -- evenly distributed
+	
+	\item penetration depth -- assumption: if energy of electrons smaller than $E_\mathrm{c}$ then losses only by ionization -- cascade dies out
+	
+	\item from $t_\mathrm{max}$ we can also get the maximum number of particles $N_\mathrm{max} = \frac{E_0}{E_\mathrm{c}}$
+	
+	\item emphasize logarithmic increase of $t_\mathrm{max}$ -- nice to keep calorimeters \textit{small}
+	
+	\item important for energy measurement: total track length of charged particles -- proportional to energy
+	\begin{align*}
+		asd
+	\end{align*}
+}
 
 
 
