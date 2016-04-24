@@ -794,6 +794,7 @@
 \end{frame}
 
 \note[itemize]{
+	\item only a rough picture -- upcoming Calorimetry talk
 	\item Picture of shower -- Blackett, Occhialini
 	\item photons are uncharged and do not leave tracks in tracking detectors
 }
@@ -911,11 +912,41 @@
 	\item emphasize logarithmic increase of $t_\mathrm{max}$ -- nice to keep calorimeters \textit{small}
 	
 	\item important for energy measurement: total track length of charged particles -- proportional to energy
-	\begin{align*}
-		asd
-	\end{align*}
 }
 
+\begin{frame}{Electromagnetic showers -- lateral spread}
+	Effects causing lateral spread of the shower:
+	\begin{itemize}
+		\setlength\itemsep{1.5em}
+		\item finite opening angles in pair production and bremsstrahlung processes
+		
+		\item \textbf{multiple scattering}{\tiny } of electrons and positrons in the absorber
+		\begin{itemize}
+			\item multiple small-angle scatterings at nuclei
+		\end{itemize}		
+	\end{itemize}
+	\vfill
+	From Molière's theory of multiple scattering:
+	\begin{itemize}
+		\item $90\%$ of the energy is contained within a distance of $R_\mathrm{M}$ to the shower axis
+				\begin{align*}
+				R_\mathrm{M} = \frac{21\,\mathrm{MeV}}{E_\mathrm{c}} X_0
+				\end{align*}
+		\item e.g.\ lead $R_\mathrm{M} = 1.6 \, \mathrm{cm}$\\ $99\%$ of the shower energy is contained within $R = 3.5 \cdot R_\mathrm{M} = 5.6 \, \mathrm{cm}$
+	\end{itemize}
+\end{frame}
+
+\note[itemize]{
+	\item dominant process is multiple scattering
+	\item independent of incident energy, since the multiple scattering is strongest for low energy particles -- only the last step is relevant for the lateral spread
+	\item $99\%$ within $3.5 \, R_\mathrm{M}$
+	\item lead:
+	\begin{itemize}
+		\item $X_0 = 0.5612 \, \mathrm{cm}$
+		\item $E_\mathrm{c} = 7.43 \, \mathrm{MeV}$ for $\mathrm{e}^-$, $E_\mathrm{c} = 7.16 \, \mathrm{MeV}$ for $\mathrm{e}^+$
+		\item $R_\mathrm{M} = 1.602 \, \mathrm{cm}$
+	\end{itemize}
+}
 
 
 
