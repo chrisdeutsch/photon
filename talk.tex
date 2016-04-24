@@ -213,7 +213,6 @@
 
 \note[itemize]{
 	\item absorption coefficient material and energy dependent
-	\item absorption length plot (PDG) ?
 }
 
 \begin{frame}{Introduction -- range comparison}
@@ -776,10 +775,98 @@
 \section{Electromagnetic showers}
 
 \begin{frame}{Electromagnetic showers}
+	\begin{itemize}
+		\setlength\itemsep{1.5em}
+		\item interaction of high energy photons ($E_\gamma \gg 10 \, \mathrm{MeV}$) with matter
+		 
+		\item dominant interaction processes
+		\begin{itemize}
+			\item photons: pair production
+			\item $\mathrm{e}^-$ / $\mathrm{e}^+$: bremsstrahlung
+		\end{itemize}
+		
+		\item combined effect: cascade/shower of photons, electrons and positrons
+	\end{itemize}
+\end{frame}
+
+\note[itemize]{
+	\item Picture of shower -- Blackett, Occhialini
+}
+
+\begin{frame}{Electromagnetic showers}
+	\begin{columns}
+		\column[c]{0.4\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{1.5em}
+			\item incident photon converts into $\mathrm{e}^+\mathrm{e}^-$-pair
+			
+			\item electrons radiate photons by bremsstrahlung
+			
+			\item process repeats until constituent particles reach critical energy~$E_\mathrm{c}$
+			\begin{itemize}
+				\item energy loss mainly due to ionization
+			\end{itemize}
+						
+		\end{itemize}
+		
+		\column[c]{0.6\textwidth}
+			\begin{center}
+				\includegraphics[width=1.0\textwidth]{./figures/shower_intro.pdf}
+			\end{center}
+	\end{columns}
+\end{frame}
+
+\note[itemize]{
+	\item critical energy
+	\begin{align*}
+		\left( \frac{\mathrm{d}E(E_\mathrm{c})}{\mathrm{d}x}  \right)_\mathrm{bremss.} = \left( \frac{\mathrm{d}E(E_\mathrm{c})}{\mathrm{d}x} \right)_\mathrm{ioniz.}
+	\end{align*}
+}
+
+\begin{frame}{Electromagnetic showers - Heitler's model}
+	\begin{itemize}
+		\setlength\itemsep{1.em}
+		\item showers are a statistical process
+		\begin{itemize}
+			\item accurate description using Monte-Carlo methods
+		\end{itemize}
+		
+		\item Heitler's model -- \emph{qualitative} description of a shower
+	\end{itemize}
+	\vfill
+	Approximations:
+	\begin{itemize}
+		\item only pair production \& bremsstrahlung on same length scale
+			\begin{align*}
+				\lambda_\mathrm{pair} = \frac{9}{7} X_0 \approx X_0 \quad \rightarrow \quad \text{cascade units: } t = \frac{x}{X_0}
+			\end{align*}
+			
+		\item 1-dimensional case: no lateral spread
+		
+		\item after interaction: energy evenly split between resulting particles
+	\end{itemize}
+\end{frame}
+
+\note[itemize]{
+	\item qualitative description -- describing only mean values
+	\item also using asymptotic cross sections ($E_\gamma \rightarrow \infty$)
+	\item radiation length $X_0$: electron lost $1/e$ of its energy due to bremsstrahlung
+	\item assume that after $X_0$ one of the processes takes place
+	
+	\item 1-dim.: production of final particles in forward direction
+}
+
+\begin{frame}{Electromagnetic showers -- Heitler's model}
 	\begin{center}
-		\includegraphics{./figures/shower.pdf}
+		\includegraphics<1>{./figures/shower_1.pdf}
+		\includegraphics<2>{./figures/shower_2.pdf}
+		\includegraphics<3>{./figures/shower_3.pdf}
+		\includegraphics<4>{./figures/shower_4.pdf}
 	\end{center}
 \end{frame}
+
+
+
 
 \section{Detector concepts}
 
@@ -820,7 +907,13 @@
 			C.\ Grupen, B.\ Shwartz,
 			\emph{Particle Detectors},
 			2nd edition,
-			Cambridge University press (2008).
+			Cambridge University Press (2008).
+		
+		\bibitem[Heitler]{Heitler}
+			\\
+			W.\ Heitler,
+			\emph{The Quantum Theory of Radiation},
+			3rd edition, Oxford University Press (1954).
 		
 
 	\end{thebibliography}
