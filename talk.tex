@@ -283,6 +283,12 @@
 	\end{center}
 \end{frame}
 
+\note[itemize]{
+	\item $n \propto \rho, \lambda \propto \frac{1}{n} \rightarrow \lambda \rho \propto \mathrm{const}$
+	\item TODO: Why the deviation of hydrogen at $1 \mathrm{MeV}$?
+	\item TODO: Why are the absorption lengths the same at $1 \mathrm{MeV}$? Where is the factor $Z$ from Compton scattering?
+}
+
 \section{Interaction processes}
 
 \begin{frame}{Interaction processes -- overview}
@@ -400,6 +406,8 @@
 	\item photon energies less than electron rest mass
 	\item Born approximation: final state electron -- plane wave (neglects influence of nucleus)
 	\item near K-edge nucleus important: correction factor depending on $Z$ and $E_\gamma$
+	
+	\item TODO: whats near the K-edge? how big is the correction?
 }
 
 \begin{frame}{Photoelectric effect -- dependencies}
@@ -407,7 +415,7 @@
 		\setlength\itemsep{1.5em}
 		\item non-relativistic case (incl.\ correction)
 		\begin{align*}
-		\sigma_\mathrm{photo} \propto Z^{4 \, \dots \, 5} \cdot E_\gamma^{n} \qquad n \leq - \frac{7}{2}
+		\sigma_\mathrm{photo} \propto  \frac{Z^{4 \, \dots \, 5}}{E_\gamma^{n}} \qquad n \leq \frac{7}{2}
 		\end{align*}
 		
 		\item relativistic case
@@ -430,10 +438,6 @@
 	\item Photoeffect important for low $E$ high $Z$ -- Detectors build from high $Z$ material / Lead-shielding
 	
 	\item Angular distribution: low E -- \SI{90}{\degree} (dipole radiation), high E -- forward direction (?)
-	
-	\item Auger electrons, fluorescence (?)
-	
-	\item Photopeak (?)
 }
 
 
@@ -568,7 +572,7 @@
 		\begin{itemize}
 			\item decreases as
 			\begin{align*}
-				\sigma \sim \frac{\ln E_\gamma}{E_\gamma}
+				\sigma \sim \frac{1}{E_\gamma}
 			\end{align*}
 		\end{itemize}
 		
@@ -930,7 +934,7 @@
 		
 		\item \textbf{multiple scattering}{\tiny } of electrons and positrons in the absorber
 		\begin{itemize}
-			\item multiple small-angle scatterings at nuclei
+			\item multiple small-angle scatterings at nuclei (TODO)
 		\end{itemize}		
 	\end{itemize}
 	\vfill
