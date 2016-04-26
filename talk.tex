@@ -854,7 +854,7 @@
 				\lambda_\mathrm{pair} = \frac{9}{7} X_0 \approx X_0 \quad \rightarrow \quad \text{cascade units: } t = \frac{x}{X_0}
 			\end{align*}
 			
-		\item 1-dimensional case: no lateral spread
+		\item 1-dimensional case: no transversal spread
 		
 		\item after interaction: energy evenly split between resulting particles
 	\end{itemize}
@@ -894,7 +894,7 @@
 				E(t) = \frac{E_0}{N(t)} = E_0 \cdot 2^{-t}
 			\end{align*}
 			
-			\item penetration depth $t_\mathrm{max}$ from $E(t_\mathrm{max}) = E_\mathrm{c}$
+			\item position of shower maximum $t_\mathrm{max}$ from $E(t_\mathrm{max}) = E_\mathrm{c}$
 			\begin{align*}
 				t_\mathrm{max} &= \log_2\left(\frac{E_0}{E_\mathrm{c}}\right)
 			\end{align*}
@@ -926,8 +926,25 @@
 	\item $t_{95\%}$ (?)
 }
 
+\begin{frame}{Electromagnetic showers -- MC simulation}
+	\begin{itemize}
+		\item 95\%
+	\end{itemize}
+	\vfill
+	Longitudinal shower profile in copper (EGS4):	
+	\begin{center}
+		\begin{overpic}[scale=0.8]{./figures/longitudinal_profile_edit.pdf}
+			\put(70, -4){\footnotesize \cite{wigmans}, modified}
+		\end{overpic}
+	\end{center}
+\end{frame}
+
+\note[itemize]{
+	\item Copper
+}
+
 \begin{frame}{Electromagnetic showers -- lateral spread}
-	Effects causing lateral spread of the shower:
+	Effects causing transversal spread of the shower:
 	\begin{itemize}
 		\setlength\itemsep{1.5em}
 		\item finite opening angles in pair production and bremsstrahlung processes
@@ -959,6 +976,12 @@
 		\item $R_\mathrm{M} = 1.602 \, \mathrm{cm}$
 	\end{itemize}
 }
+
+\begin{frame}{Electromagnetic showers -- MC simulation}
+	\begin{center}
+		\includegraphics[scale=0.8]{./figures/transversal_profile_edit.pdf}
+	\end{center}
+\end{frame}
 
 \begin{frame}{Electromagnetic showers}
 	\begin{center}
@@ -997,42 +1020,45 @@
 	\footnotesize
 	\begin{thebibliography}{9}
 		\bibitem[PDG]{pdg}
-			\\
 			K.A. Olive \textit{et al.} (Particle Data Group),
 			\emph{The Review of Particle Physics},
 			Chin.\ Phys.\ C, \textbf{38}, 090001 (2014) and 2015 update.
 		
 		\bibitem[Leo]{leo}
-			\\
 			W.\ R.\ Leo,
 			\emph{Techniques for Nuclear and Particle Physics Experiments},
 			Springer (1994).
 		
 		\bibitem[Davisson]{siegbahn}
-			\\
 			C.\ M.\ Davisson,
 			\emph{Interaction of $\gamma$-Radiation with Matter},
 			published in K.\ Siegbahn (ed.),
 			\emph{Alpha- Beta- and Gamma-Ray Spectroscopy}, North-Holland Publishing Company (1979).
 		
 		\bibitem[Grupen, Shwarz]{grupen}
-			\\
 			C.\ Grupen, B.\ Shwartz,
 			\emph{Particle Detectors},
 			2nd edition,
 			Cambridge University Press (2008).
 		
 		\bibitem[Heitler]{Heitler}
-			\\
 			W.\ Heitler,
 			\emph{The Quantum Theory of Radiation},
 			3rd edition, Oxford University Press (1954).
+		
+		\bibitem[Wigmans]{wigmans}
+			R.\ Wigmans,
+			\emph{Calorimetry},
+			\url{http://www.roma1.infn.it/people/rahatlou/labhep/material/Wigmans_ICFA2003_Lectures.pdf} (last access: 26th April 2016).
 	\end{thebibliography}
 \end{frame}
 
 \beginbackup
 
-\begin{frame}{Appendix}
+\begin{frame}{Gamma distribution}
+	\begin{align*}
+		f(x) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha - 1} e^{-\beta x}
+	\end{align*}
 \end{frame}
 
 \backupend
