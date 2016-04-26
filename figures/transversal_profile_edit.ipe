@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160426153322" modified="D:20160426153841"/>
+<info created="D:20160426153322" modified="D:20160426182021"/>
 <bitmap id="1" width="942" height="1080" length="28383" ColorSpace="DeviceRGB" Filter="FlateDecode" BitsPerComponent="8" encoding="base64">
 eNrs3T+ILNmh4OmrXTHwHMGlDcHQhq75xLJsrUCSIWPbqGf0jPcos40FbdkrYxLkyJA35azs
 MmRojRVlrbHPKrONcQSFjHbk1MCFHR6IuSsYmkFvl9iTfVJxoyMyIk9Envj/fRTd9SeqKisi
@@ -969,5 +969,6 @@ h
 <text matrix="1 0 0 1 -77.8805 -8.83146" transformations="translations" pos="464 560" stroke="red" type="label" width="19.225" height="7.461" depth="1.63" valign="baseline" size="11">$2 X_0$</text>
 <text matrix="1 0 0 1 -77.8805 -3.75041" transformations="translations" pos="464 544" stroke="black" type="label" width="19.225" height="7.461" depth="1.63" valign="baseline" size="11">$6 X_0$</text>
 <text matrix="1 0 0 1 -77.8805 1.66058" transformations="translations" pos="464 528" stroke="blue" type="label" width="24.679" height="7.461" depth="1.63" valign="baseline" size="11">$15 X_0$</text>
+<text matrix="1 0 0 1 -29.0893 5.86335" transformations="translations" pos="336 560" stroke="black" type="label" width="118.53" height="7.577" depth="2.12" valign="baseline" size="11">$10 \, \mathrm{GeV}$ shower in copper</text>
 </page>
 </ipe>

@@ -22,6 +22,7 @@
 % Grafiken
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{multirow}
 \setbeamerfont{caption}{size=\footnotesize}
 \setbeamertemplate{caption}{\raggedright\insertcaption\par}
 \usepackage[percent]{overpic}
@@ -930,41 +931,41 @@
 	\item from $t_\mathrm{max}$ we can also get the maximum number of particles $N_\mathrm{max} = \frac{E_0}{E_\mathrm{c}}$
 	
 	\item emphasize logarithmic increase of $t_\mathrm{max}$ -- nice to keep calorimeters \textit{small}
-	
-	\item important for energy measurement: total track length of charged particles -- proportional to energy
-	\begin{align*}
-		\sum_{t=0}^{t_\mathrm{max}} 2^t = 2^{t_\mathrm{max} + 1}
-	\end{align*}
-	
-	\item $t_{95\%}$ (?)
 }
 
 \begin{frame}{Electromagnetic showers -- MC simulation}
 	\begin{itemize}
-		\item 95\%
+		\item shower depth containing 95\% of the total energy
+		\begin{align*}
+			t_{95\%} \approx t_\mathrm{max} + 0.08 Z + 9.6
+		\end{align*}
 	\end{itemize}
 	\vfill
 	Longitudinal shower profile in copper (EGS4):	
 	\begin{center}
 		\begin{overpic}[scale=0.8]{./figures/longitudinal_profile_edit.pdf}
-			\put(70, -4){\footnotesize \cite{wigmans}, modified}
+			\put(75, -1){\footnotesize \cite{wigmans}, modified}
 		\end{overpic}
 	\end{center}
 \end{frame}
 
 \note[itemize]{
 	\item Copper
+	\item after $t_\mathrm{max}$: electrons quickly absorbed due to energy loss by ionization
+	\item still a lot of soft photons at the end of the shower: exponential decay at the tail of the longitudinal profile
 }
 
-\begin{frame}{Electromagnetic showers -- lateral spread}
+\begin{frame}{Electromagnetic showers -- transversal spread}
 	Effects causing transversal spread of the shower:
 	\begin{itemize}
-		\setlength\itemsep{1.5em}
+		\setlength\itemsep{1.em}
 		\item finite opening angles in pair production and bremsstrahlung processes
+		
+		\item Compton scattering
 		
 		\item \textbf{multiple scattering}{\tiny } of electrons and positrons in the absorber
 		\begin{itemize}
-			\item multiple small-angle scatterings at nuclei (TODO)
+			\item multiple small-angle scatterings at nuclei (negligible energy transfer)
 		\end{itemize}		
 	\end{itemize}
 	\vfill
@@ -974,7 +975,6 @@
 				\begin{align*}
 				R_\mathrm{M} = \frac{21\,\mathrm{MeV}}{E_\mathrm{c}} X_0
 				\end{align*}
-		\item e.g.\ lead $R_\mathrm{M} = 1.6 \, \mathrm{cm}$\\ $99\%$ of the shower energy is contained within $R = 3.5 \cdot R_\mathrm{M} = 5.6 \, \mathrm{cm}$
 	\end{itemize}
 \end{frame}
 
@@ -991,9 +991,27 @@
 }
 
 \begin{frame}{Electromagnetic showers -- MC simulation}
-	\begin{center}
-		\includegraphics[scale=0.8]{./figures/transversal_profile_edit.pdf}
-	\end{center}
+	\begin{columns}
+		\column[c]{0.45\textwidth}
+		\begin{center}
+			\begin{tabular}{rc}
+				\toprule
+				\multirow{2}{0.4\textwidth}{\centering distance from shower axis} & \multirow{2}{0.3\textwidth}{\centering shower energy} \\
+				&\\
+				\midrule
+				$R_\mathrm{M}$ \hspace{0.3cm} & $90 \%$  \\
+				$2 \, R_\mathrm{M}$ \hspace{0.3cm} & $95 \%$ \\
+				$3.5 \, R_\mathrm{M}$ \hspace{0.3cm} & $99 \%$ \\
+				\bottomrule
+			\end{tabular}
+		\end{center}		
+		
+		\column[c]{0.55\textwidth}
+		
+				\begin{overpic}[scale=0.8]{./figures/transversal_profile_edit.pdf}
+					\put(50, -4){\footnotesize \cite{wigmans}, modified}
+				\end{overpic}
+	\end{columns}
 \end{frame}
 
 \section{Detector concepts}
@@ -1012,7 +1030,7 @@
 
 
 \begin{frame}{Bibliography}
-	\footnotesize
+	\scriptsize
 	\begin{thebibliography}{9}
 		\bibitem[PDG]{pdg}
 			K.A. Olive \textit{et al.} (Particle Data Group),
@@ -1030,7 +1048,7 @@
 			published in K.\ Siegbahn (ed.),
 			\emph{Alpha- Beta- and Gamma-Ray Spectroscopy}, North-Holland Publishing Company (1979).
 		
-		\bibitem[Grupen, Shwarz]{grupen}
+		\bibitem[Grupen, Shwartz]{grupen}
 			C.\ Grupen, B.\ Shwartz,
 			\emph{Particle Detectors},
 			2nd edition,
@@ -1040,6 +1058,11 @@
 			W.\ Heitler,
 			\emph{The Quantum Theory of Radiation},
 			3rd edition, Oxford University Press (1954).
+		
+		\bibitem[Fabjan, Gianotti]{fabjan}
+			C.\ W.\ Fabjan, F.\ Gianotti,
+			\emph{Calorimetry for particle physics},
+			Reviews of Modern Physics, Vol.\ 75 (2003).
 		
 		\bibitem[Wigmans]{wigmans}
 			R.\ Wigmans,
