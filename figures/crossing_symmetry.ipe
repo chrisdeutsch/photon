@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160418231426" modified="D:20160426204550"/>
+<info created="D:20160418231426" modified="D:20160426205735"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -1032,7 +1032,7 @@ h
 <text layer="pair_production" matrix="1 0 0 1 252.047 28.797" transformations="translations" pos="120 760" stroke="black" type="label" width="11.933" height="8.774" depth="0" valign="center" size="11">$\mathrm{e}^-$</text>
 <text matrix="1 0 0 1 252.891 -90.9336" transformations="translations" pos="120 760" stroke="black" type="label" width="11.933" height="8.774" depth="0" valign="center" size="11">$\mathrm{e}^+$</text>
 <text layer="bremsstrahlung" matrix="1 0 0 1 -0.539416 -8.16967" transformations="translations" pos="236 776" stroke="black" type="label" width="6.254" height="4.698" depth="2.12" valign="center" size="11">$\gamma$</text>
-<text layer="pair_production" matrix="1 0 0 1 52.0209 15.0607" transformations="translations" pos="236 776" stroke="black" type="label" width="6.254" height="4.698" depth="2.12" halign="right" valign="center" size="11">$\gamma$</text>
+<text layer="pair_production" matrix="1 0 0 1 52 12.797" transformations="translations" pos="236 776" stroke="black" type="label" width="6.254" height="4.698" depth="2.12" halign="right" valign="center" size="11">$\gamma$</text>
 <group layer="bremsstrahlung">
 <path matrix="0.707107 -0.707107 0.707107 0.707107 -765.795 505.908" stroke="black" pen="1">
 478.332 738.641 m
@@ -1263,10 +1263,12 @@ h
 </path>
 </group>
 </group>
-<path stroke="black" arrow="normal/normal">
+<path matrix="1 0 0 1 24 -104" stroke="black" arrow="normal/normal">
 96 784 m
 144 784 l
 </path>
-<text matrix="1 0 0 1 -48 -12" transformations="translations" pos="192 800" stroke="black" type="label" width="3.939" height="6.71" depth="0" valign="baseline" size="11">$t$</text>
+<text matrix="1 0 0 1 -24 -116" transformations="translations" pos="192 800" stroke="black" type="label" width="3.939" height="6.71" depth="0" valign="baseline" size="11">$t$</text>
+<text matrix="1 0 0 1 52 -23.089" transformations="translations" pos="112 800" stroke="black" type="label" width="73.515" height="7.577" depth="2.12" halign="center" valign="baseline" size="11">bremsstrahlung</text>
+<text matrix="1 0 0 1 25.4494 0.800813" transformations="translations" pos="304 800" stroke="black" type="label" width="74.303" height="7.577" depth="2.12" halign="center" valign="baseline" size="11">pair production</text>
 </page>
 </ipe>
