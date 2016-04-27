@@ -1002,17 +1002,110 @@
 \section{Detector concepts}
 
 \begin{frame}{Detector concepts}
+	\textbf{Objective:}
 	\begin{itemize}
-		\item PMT (scintillation light)
-		\item Photodioden (PIN, avalanche)
-		\item hybrid detectors (?)
+		\setlength\itemsep{1.em}
+		\item  determine kinematic variables of a photon at some point in time
+		\begin{itemize}
+			\item position
+			\item energy \& momentum
+		\end{itemize}
+		(ideally with high resolution \& high rate capability)
 	\end{itemize}
+	\vfill
+	
+	\textbf{Considerations:}
+	\begin{itemize}
+		\setlength\itemsep{1.em}
+		\item photon uncharged \textrightarrow~no direct ionization
+		
+		\item energy transfer to electrons by interaction
+		\begin{itemize}
+			\item energy deposition ultimately by charged particle interaction\\(ionization, excitation, \dots)
+		\end{itemize}
+	\end{itemize}
+	
 \end{frame}
 
 \note[itemize]{
-	\item no direct detection mechanism for photons\textrightarrow charged particle interaction mandatory
+	\item position: segmentation in space
+	\item 4-momentum: calorimetry / spectroscopy
 }
 
+\begin{frame}{Detector concepts}
+	\begin{columns}
+		\column[c]{0.6\textwidth}
+			\begin{itemize}
+				\setlength\itemsep{1.5em}
+				
+				\item detector acts as a \textbf{conversion medium} 
+				\begin{itemize}
+					\item convert incident photon into multiple electrons
+					\item increased probability with large $Z$ and density $\rho$
+				\end{itemize}
+				
+				\item detector material is \textbf{active}
+				\begin{itemize}
+					\item response proportional to deposited energy
+					\item e.g.\ scintillation light, charge signal (semiconductor/gaseous detectors)\\
+					\textrightarrow~discussed in upcoming talks
+				\end{itemize} 
+			\end{itemize}
+			
+		\column[c]{0.4\textwidth}
+			\vspace{0.5cm}
+			\begin{center}
+				\begin{overpic}[width=0.9\textwidth]{./figures/alice_pwo.jpg}
+					\put(-2, 108){
+						\begin{minipage}{0.9\textwidth}
+							\centering
+							PWO crystal of the ALICE Photon Spectrometer
+						\end{minipage}}
+					\put(5, -6){\scriptsize CERN, CERN-EX-0206020-01}
+				\end{overpic}
+			\end{center}
+	\end{columns}
+\end{frame}
+
+\note[itemize]{
+	\item conversion medium:
+	\begin{itemize}
+		\item fully contain any interaction (no missing energy)
+	\end{itemize}
+	
+	\item active:
+	\begin{itemize}
+		\item active to charged particles
+	\end{itemize}
+	
+	\item PHOS: 18 cm long with 2.2 cm square section (lead tungstate)
+	\item Density: $\rho = 8.28 \, \mathrm{g}/\mathrm{cm}^3$
+	\item Radiation length: $X_0 = 0.89 \, \mathrm{cm}$
+	\item Molière radius: $R_\mathrm{M} = 2.2 \, \mathrm{cm}$
+	\item photons up to $10 \, \mathrm{GeV}$
+}
+
+\begin{frame}{Detector concepts -- finite size effects}
+	\begin{center}
+		\begin{overpic}{./figures/knoll/intermediate_pretty.pdf}
+			\put(80, -4){\footnotesize \cite{knoll}}
+		\end{overpic}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Detector concepts -- finite size effects}
+	\begin{center}
+		\includegraphics{./figures/knoll/intermediate.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Summary}
+	\begin{itemize}
+		\item A
+		\item B
+		\item C
+	\end{itemize}
+\end{frame}
 
 \begin{frame}{Bibliography}
 	\scriptsize
@@ -1053,6 +1146,11 @@
 			R.\ Wigmans,
 			\emph{Calorimetry},
 			\url{http://www.roma1.infn.it/people/rahatlou/labhep/material/Wigmans_ICFA2003_Lectures.pdf} (last access: 26th April 2016).
+		
+		\bibitem[Knoll]{knoll}
+			G.\ F.\ Knoll,
+			\emph{Radiation Detection and Measurement},
+			4th edition, Wiley (2010).
 	\end{thebibliography}
 \end{frame}
 
