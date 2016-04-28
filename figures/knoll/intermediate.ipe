@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160427212732" modified="D:20160427215730"/>
+<info created="D:20160427212732" modified="D:20160428145124"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -254,59 +254,14 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<group layer="alpha">
-<path matrix="1 0 0 1 0 -96" stroke="black" arrow="normal/small">
-208 624 m
-208 732 l
-</path>
-<path matrix="1 0 0 1 0 -96" stroke="black" arrow="normal/small">
-208 624 m
-412 624 l
-</path>
-<path matrix="1 0 0 1 0 -96" stroke="black" pen="1">
-208 658.621 m
-217.694 656.725
-232.303 654.718
-244.905 653.38
-256.391 652.934
-267.32 652.488
-279.587 652.822
-291.52 653.714
-301.891 654.941 c
-301.891 654.941 m
-303.617 692.852 l
-305.971 655.608 l
-305.971 655.608 m
-315.493 657.581
-328.79 661.441
-338.055 664.444
-343.373 666.588 c
-343.373 666.588 m
-345.089 709.309 l
-347.748 667.875 l
-347.748 667.875 m
-352.37 669.702
-359.437 672.708
-364.435 674.7 c
-364.435 674.7 m
-364.835 641.6 l
-364.835 641.6 m
-369.467 640.313
-375.301 639.026
-383.279 637.911
-384.909 637.739 c
-384.909 637.739 m
-387.835 724.28 l
-391.024 624 l
-</path>
-<text matrix="1 0 0 1 -1.27404 -95.6815" transformations="translations" pos="392.438 707.47" stroke="black" type="minipage" width="28.348" height="17.27" depth="12.3" valign="top" size="9" style="center">Full-energy peak</text>
+<text layer="alpha" matrix="1 0 0 1 -1.27404 -95.6815" transformations="translations" pos="392.438 707.47" stroke="black" type="minipage" width="28.348" height="17.27" depth="12.3" valign="top" size="9" style="center">Full-energy peak</text>
 <text matrix="1 0 0 1 -6.05169 -78.482" transformations="translations" pos="317.907 702.692" stroke="black" type="minipage" width="31.214" height="17.27" depth="12.3" valign="top" size="9" style="center">Single escape peak</text>
 <text matrix="1 0 0 1 0.95553 -93.1334" transformations="translations" pos="263.442 696.959" stroke="black" type="minipage" width="35.9916" height="17.27" depth="12.3" valign="top" size="9" style="center">Double escape peak</text>
 <path matrix="1 0 0 1 0 -96" stroke="black">
 388 624 m
 388 628 l
 </path>
-<text matrix="1 0 0 1 0 -94" transformations="translations" pos="388 620" stroke="black" type="label" width="11.564" height="6.126" depth="2.16" halign="center" valign="top" size="9">$E_\gamma$</text>
+<text matrix="1 0 0 1 -0.0319478 -101.204" transformations="translations" pos="388 620" stroke="black" type="label" width="11.564" height="6.126" depth="2.16" halign="center" valign="baseline" size="9">$E_\gamma$</text>
 <path matrix="1 0 0 1 0 -96" stroke="black" arrow="pointed/normal">
 376 608 m
 376 636 l
@@ -319,6 +274,43 @@ h
 </path>
 <text matrix="1 0 0 1 4.55219 -99.9204" transformations="translations" pos="340.809 618.716" stroke="black" type="label" width="50.018" height="7.663" depth="2.24" halign="center" valign="baseline" size="9">$(E_\gamma - m_\mathrm{e}c^2)$</text>
 <text matrix="1 0 0 1 23.5758 -94.9544" transformations="translations" pos="388 620" stroke="black" type="label" width="7.292" height="6.127" depth="0" halign="center" valign="top" size="9">$E$</text>
-</group>
+<path stroke="0.894 0.102 0.11" pen="0.7">
+391.024 528 m
+387.835 628.28 l
+384.909 541.739 l
+383.279 541.911
+375.301 543.026
+369.467 544.313
+364.835 545.6 c
+364.435 578.7 l
+359.437 576.708
+352.37 573.702
+347.748 571.875 c
+345.089 613.309 l
+343.373 570.588 l
+338.055 568.444
+328.79 565.441
+315.493 561.581
+305.971 559.608 c
+303.617 596.852 l
+301.891 558.941 l
+291.52 557.714
+279.587 556.822
+267.32 556.488
+256.391 556.934
+244.905 557.38
+232.303 558.718
+217.694 560.725
+208 562.621 c
+</path>
+<path matrix="1 0 0 1 0 -96" stroke="black" arrow="normal/small">
+208 624 m
+208 732 l
+</path>
+<path matrix="1 0 0 1 0 -96" stroke="black" arrow="normal/small">
+208 624 m
+412 624 l
+</path>
+<text matrix="1 0 0 1 -1.91298 0.632378" transformations="translations" pos="244.779 548.233" stroke="black" type="minipage" width="85.057" height="6.43" depth="1.44" valign="top" size="9" style="center">Compton continuum</text>
 </page>
 </ipe>
