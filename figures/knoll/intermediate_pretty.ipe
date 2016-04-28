@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160427222249" modified="D:20160427222249"/>
+<info created="D:20160427222249" modified="D:20160428142501"/>
 <bitmap id="1" width="1292" height="732" length="184113" ColorSpace="DeviceGray" Filter="FlateDecode" BitsPerComponent="8" encoding="base64">
 eNrsnQVcVGn3x9/dddc1ERQQGJQUUSxMDAzs7g7EDuwWxe7u7sRYOzBRBFEJke7OGabn9vz/
 93nuvTMD4vuqq2vscz67Mnln5s693znnOef8jlaLDBkyZMiQIUOGDBkyZMiQIUOGDBkyZMiQ
@@ -3731,5 +3731,65 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -0.376935 -0.790998" transformations="translations" pos="150.427 447.269" stroke="black" type="minipage" width="48.4454" height="11.82" depth="6.85" valign="top" size="9" style="center">Compton scattering</text>
+<path fill="white">
+263.88 388.296 m
+266.143 384.335 l
+271.895 386.41 l
+276.233 392.445 l
+269.726 395.18 l
+264.823 391.596 l
+h
+</path>
+<text matrix="1 0 0 1 -118.635 -77.6911" transformations="translations" pos="384 464" stroke="black" type="label" width="10.187" height="7.628" depth="0" valign="baseline" size="9">$\mathrm{e}^+$</text>
+<path fill="white">
+297.545 412.059 m
+300.468 409.985 l
+310.464 412.437 l
+309.427 421.112 l
+296.885 419.98 l
+h
+</path>
+<text matrix="1 0 0 1 -85.2792 -51.6343" transformations="translations" pos="384 464" stroke="black" type="label" width="10.353" height="7.628" depth="0" valign="baseline" size="9">$\mathrm{e}^-$</text>
+<path fill="white">
+247.566 393.388 m
+255.77 393.011 l
+260.485 400.083 l
+247.755 399.989 l
+h
+</path>
+<text matrix="1 0 0 1 -135.001 -69.4511" transformations="translations" pos="384 464" stroke="black" type="label" width="10.353" height="7.628" depth="0" valign="baseline" size="9">$\mathrm{e}^-$</text>
+<path fill="white">
+239.456 414.7 m
+239.928 408.759 l
+253.035 409.042 l
+252.658 418.189 l
+h
+</path>
+<text matrix="1 0 0 1 -142.874 -54.1201" transformations="translations" pos="384 464" stroke="black" type="label" width="10.353" height="7.628" depth="0" valign="baseline" size="9">$\mathrm{e}^-$</text>
+<path fill="white">
+259.149 450.31 m
+259.998 444.463 l
+272.163 445.783 l
+270.465 453.893 l
+h
+</path>
+<path fill="white">
+293.192 459.362 m
+293.286 450.593 l
+307.714 450.498 l
+308.091 459.834 l
+h
+</path>
+<text matrix="1 0 0 1 -123.606 -17.8642" transformations="translations" pos="384 464" stroke="black" type="label" width="10.353" height="7.628" depth="0" valign="baseline" size="9">$\mathrm{e}^-$</text>
+<text matrix="1 0 0 1 -89.2151 -11.4418" transformations="translations" pos="384 464" stroke="black" type="label" width="10.353" height="7.628" depth="0" valign="baseline" size="9">$\mathrm{e}^-$</text>
+<path fill="white">
+287.946 472.247 m
+289.67 470.168 l
+295.171 470.61 l
+300.2 477.29 l
+288.746 476.985 l
+h
+</path>
+<text matrix="1 0 0 1 -95.0161 7.20407" transformations="translations" pos="384 464" stroke="black" type="label" width="10.353" height="7.628" depth="0" valign="baseline" size="9">$\mathrm{e}^-$</text>
 </page>
 </ipe>
