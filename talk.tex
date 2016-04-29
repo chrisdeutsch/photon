@@ -1,4 +1,4 @@
-\documentclass[11pt,xcolor=dvipsnames,professionalfonts]{beamer}
+\documentclass[11pt,xcolor=dvipsnames,professionalfonts,notes]{beamer}
 
 % Pakete
 \usepackage[utf8]{inputenc}
@@ -1064,6 +1064,7 @@
 }
 
 \begin{frame}{Detector concepts -- example from HEP}
+	\centering ALICE Photon Spectrometer (PHOS)
 	\begin{columns}
 		\column[c]{0.6\textwidth}
 		\begin{center}
@@ -1074,13 +1075,7 @@
 		
 		\column[c]{0.4\textwidth}
 		\begin{center}
-			\vspace{0.5cm}
 			\begin{overpic}[width=0.9\textwidth]{./figures/alice_pwo.jpg}
-				\put(-2, 108){
-					\begin{minipage}{0.9\textwidth}
-						\centering
-						PWO crystal of the ALICE Photon Spectrometer
-					\end{minipage}}
 					\put(5, -6){\scriptsize CERN, CERN-EX-0206020-01}
 				\end{overpic}
 			\end{center}
@@ -1088,11 +1083,15 @@
 \end{frame}
 
 \note[itemize]{
-		\item PHOS: 18 cm long with 2.2 cm square section (lead tungstate)
 		\item Density: $\rho = 8.28 \, \mathrm{g}/\mathrm{cm}^3$
 		\item Radiation length: $X_0 = 0.89 \, \mathrm{cm}$
 		\item Molière radius: $R_\mathrm{M} = 2.2 \, \mathrm{cm}$
-		\item photons up to $10 \, \mathrm{GeV}$
+		
+		\item ALICE Photon Spectrometer
+		\item active material PbWO$_\text{4}$: 18 cm long ($20 X_0$) with 2.2 cm square section ($1 R_\mathrm{M}$)
+		\item allows for photons up to $10 \, \mathrm{GeV}$
+		\item segmentation with independent readouts (avalanche photodiode) -- position resolution
+		
 }
 
 \begin{frame}{Detector concepts -- energy leaving the detector}
