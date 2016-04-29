@@ -1,4 +1,4 @@
-\documentclass[11pt,xcolor=dvipsnames,professionalfonts,notes]{beamer}
+\documentclass[11pt,xcolor=dvipsnames,professionalfonts]{beamer}
 
 % Pakete
 \usepackage[utf8]{inputenc}
@@ -1033,38 +1033,22 @@
 }
 
 \begin{frame}{Detector concepts}
-	\begin{columns}
-		\column[c]{0.6\textwidth}
+		\begin{itemize}
+			\setlength\itemsep{1.5em}
+			
+			\item detector acts as a \textbf{conversion medium} 
 			\begin{itemize}
-				\setlength\itemsep{1.5em}
-				
-				\item detector acts as a \textbf{conversion medium} 
-				\begin{itemize}
-					\item convert incident photon into multiple electrons
-					\item increased probability with large $Z$ and density $\rho$
-				\end{itemize}
-				
-				\item detector material is \textbf{active}
-				\begin{itemize}
-					\item response proportional to deposited energy
-					\item e.g.\ scintillation light, charge signal (semiconductor/gaseous detectors)\\
-					\textrightarrow~discussed in upcoming talks
-				\end{itemize} 
+				\item convert incident photon into multiple electrons
+				\item increased probability with large $Z$ and density $\rho$
 			\end{itemize}
 			
-		\column[c]{0.4\textwidth}
-			\vspace{0.5cm}
-			\begin{center}
-				\begin{overpic}[width=0.9\textwidth]{./figures/alice_pwo.jpg}
-					\put(-2, 108){
-						\begin{minipage}{0.9\textwidth}
-							\centering
-							PWO crystal of the ALICE Photon Spectrometer
-						\end{minipage}}
-					\put(5, -6){\scriptsize CERN, CERN-EX-0206020-01}
-				\end{overpic}
-			\end{center}
-	\end{columns}
+			\item detector material is \textbf{active}
+			\begin{itemize}
+				\item response proportional to deposited energy
+				\item e.g.\ scintillation light, charge signal (semiconductor/gaseous detectors)\\
+				\textrightarrow~discussed in upcoming talks
+			\end{itemize} 
+		\end{itemize}			
 \end{frame}
 
 \note[itemize]{
@@ -1077,12 +1061,38 @@
 	\begin{itemize}
 		\item active to charged particles
 	\end{itemize}
-	
-	\item PHOS: 18 cm long with 2.2 cm square section (lead tungstate)
-	\item Density: $\rho = 8.28 \, \mathrm{g}/\mathrm{cm}^3$
-	\item Radiation length: $X_0 = 0.89 \, \mathrm{cm}$
-	\item Molière radius: $R_\mathrm{M} = 2.2 \, \mathrm{cm}$
-	\item photons up to $10 \, \mathrm{GeV}$
+}
+
+\begin{frame}{Detector concepts -- example from HEP}
+	\begin{columns}
+		\column[c]{0.6\textwidth}
+		\begin{center}
+			\begin{overpic}[width=1.0\textwidth]{./figures/alice_phos.jpg}
+				\put(25, -6){\scriptsize CERN, CERN-EX-0603026-03}
+			\end{overpic}
+		\end{center}
+		
+		\column[c]{0.4\textwidth}
+		\begin{center}
+			\vspace{0.5cm}
+			\begin{overpic}[width=0.9\textwidth]{./figures/alice_pwo.jpg}
+				\put(-2, 108){
+					\begin{minipage}{0.9\textwidth}
+						\centering
+						PWO crystal of the ALICE Photon Spectrometer
+					\end{minipage}}
+					\put(5, -6){\scriptsize CERN, CERN-EX-0206020-01}
+				\end{overpic}
+			\end{center}
+	\end{columns}
+\end{frame}
+
+\note[itemize]{
+		\item PHOS: 18 cm long with 2.2 cm square section (lead tungstate)
+		\item Density: $\rho = 8.28 \, \mathrm{g}/\mathrm{cm}^3$
+		\item Radiation length: $X_0 = 0.89 \, \mathrm{cm}$
+		\item Molière radius: $R_\mathrm{M} = 2.2 \, \mathrm{cm}$
+		\item photons up to $10 \, \mathrm{GeV}$
 }
 
 \begin{frame}{Detector concepts -- energy leaving the detector}
