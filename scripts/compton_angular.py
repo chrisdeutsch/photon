@@ -18,8 +18,8 @@ for sigma in crs:
 
 plt.xlim(-1.0, 1.0)
 plt.ylim(0.0, 2.0)
-plt.xlabel(r"$\cos\theta$")
-plt.ylabel(r"$\frac{\mathrm{d}\sigma}{\mathrm{d} \Omega}$ / a.u.")
+plt.xlabel(r"$\cos\theta_\gamma$")
+plt.ylabel(r"$\frac{\mathrm{d}\sigma}{\mathrm{d} \Omega_\gamma}$ / a.u.")
 
 plt.tick_params(axis="y", labelleft="off")
 

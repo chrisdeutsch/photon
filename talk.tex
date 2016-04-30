@@ -234,6 +234,7 @@
 		
 		\includegraphics[width=1.0\textwidth]{./figures/range.pdf}
 		
+		
 		\column[t]{0.5\textwidth}
 		\centering
 		\hspace{1cm}\textbf{photons:}
@@ -357,7 +358,7 @@
 		\end{itemize}
 		
 		\column[c]{0.45\textwidth}
-		\begin{overpic}[width=1.0\textwidth]{./figures/lead_edges.png}
+		\begin{overpic}[width=1.0\textwidth]{./figures/abs_edge_w_arrow.pdf}
 			\put(20,20){\footnotesize \rmfamily Lead ($Z=82$)}
 			\put(39, -1){\footnotesize $E_\gamma \, / \, \mathrm{MeV}$}
 			\put(-2, 40){\rotatebox{90}{\footnotesize $\sigma_\mathrm{photo} \, / \, \mathrm{barn}$}}
@@ -385,7 +386,7 @@
 			\item non-relativistic final state electron			
 			\begin{align*}
 				&\sigma_\mathrm{photo} = \underbrace{4\sqrt{2} \alpha^4 \sigma_\mathrm{Th} \alert{Z^5}  \left( \frac{m_\mathrm{e}c^2}{\alert{E_\gamma}} \right)^{\alert{\frac{7}{2}}}}_{\text{Born approximation}} \cdot \, \overbrace{f(Z, E_\gamma)}^{\mathclap{\substack{\text{correction}\\\text{near K-edge}}}} \\[1em]
-				&\sigma_\mathrm{Th}\text{: Thomson cross section}
+				&\sigma_\mathrm{Th} = \frac{8 \pi}{3} r_\mathrm{e}^2 \quad \text{Thomson cross section}
 			\end{align*}
 		\end{itemize}
 	\end{itemize}
@@ -455,7 +456,7 @@
 		
 		\item energy transfer from 4-momentum conservation
 		\begin{align*}
-			T_\mathrm{e} = E_\gamma \frac{\epsilon (1 - \cos\theta)}{1 + \epsilon (1 - \cos\theta)} \qquad \epsilon := \frac{E_\gamma}{m_\mathrm{e}c^2}
+			T_\mathrm{e} = E_\gamma \frac{\epsilon (1 - \cos\theta_\gamma)}{1 + \epsilon (1 - \cos\theta_\gamma)} \qquad \epsilon := \frac{E_\gamma}{m_\mathrm{e}c^2}
 		\end{align*}
 		\begin{itemize}
 			\item maximum for backscattering (Compton edge)
@@ -495,7 +496,7 @@
 				
 			\item advent of QED -- Klein-Nishina (1928)
 			\begin{align*}
-				P(E_\gamma, \theta) := \frac{E_\gamma^\prime(E_\gamma, \theta)}{E_\gamma}
+				P(E_\gamma, \theta_\gamma) := \frac{E_\gamma^\prime(E_\gamma, \theta_\gamma)}{E_\gamma}
 			\end{align*}
 		\end{itemize}
 		
@@ -506,7 +507,7 @@
 	\end{columns}
 						
 	\begin{align*}
-	\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} = \frac{r_\mathrm{e}^2}{2} \cdot P(E_\gamma, \theta)^2 \bigg[ P(E_\gamma, \theta) + \frac{1}{P(E_\gamma, \theta)} + \cos^2\theta - 1 \bigg]
+	\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega_\gamma} = \frac{r_\mathrm{e}^2}{2} \cdot P(E_\gamma, \theta_\gamma)^2 \bigg[ P(E_\gamma, \theta_\gamma) + \frac{1}{P(E_\gamma, \theta_\gamma)} + \cos^2\theta_\gamma - 1 \bigg]
 	\end{align*}
 \end{frame}
 
@@ -530,7 +531,7 @@
 			\setlength\itemsep{1.5em}
 			\item generally interested in energy transfer
 			\begin{align*}
-				\frac{\mathrm{d} \sigma}{\mathrm{d} T_\mathrm{e}} = \left(\frac{\mathrm{d}T_\mathrm{e}}{\mathrm{d}\cos\theta}\right)^{-1} \cdot 2 \pi \frac{\mathrm{d}\sigma}{\mathrm{d}\Omega}
+				\frac{\mathrm{d} \sigma}{\mathrm{d} T_\mathrm{e}} = \left(\frac{\mathrm{d}T_\mathrm{e}}{\mathrm{d}\cos\theta_\gamma}\right)^{-1} \cdot 2 \pi \frac{\mathrm{d}\sigma}{\mathrm{d}\Omega_\gamma}
 			\end{align*}
 		\end{itemize}
 		
@@ -668,7 +669,6 @@
 		\begin{align*}
 			\sigma_\mathrm{pair} &= \frac{7}{9} \frac{1}{X_0} \frac{A}{N_\mathrm{A} \rho}
 		\end{align*}
-		
 		\item approximate proportionality $\sigma_\mathrm{pair} \propto Z^2$
 		\begin{itemize}
 			\item independent of $E_\gamma$
