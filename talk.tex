@@ -1,4 +1,4 @@
-\documentclass[11pt,xcolor=dvipsnames,professionalfonts,notes]{beamer}
+\documentclass[11pt,xcolor=dvipsnames,professionalfonts]{beamer}
 
 % Pakete
 \usepackage[utf8]{inputenc}
@@ -12,6 +12,9 @@
 
 % Text tools
 \usepackage{textcomp}
+
+% Annotation tools
+\usepackage[customcolors,beamer]{hf-tikz}
 
 % Einheiten
 \usepackage{siunitx}
@@ -72,6 +75,9 @@
 \begin{document}
 \maketitle
 
+\hfsetfillcolor{red!15}
+\hfsetbordercolor{red}
+
 \begin{frame}{Interactions of photons with matter}
 	\tableofcontents
 \end{frame}
@@ -89,9 +95,16 @@
 		\item range $R$
 	\end{itemize}
 	\vfill
-	\begin{center}
-		\includegraphics{./figures/range.pdf}
-	\end{center}
+	\begin{columns}
+		\column[b]{0.5\textwidth}
+			\begin{center}
+				\includegraphics[width=1.0\textwidth]{./figures/stoppingpower.pdf}
+			\end{center}
+		\column[b]{0.5\textwidth}
+			\begin{center}
+				\includegraphics[width=1.0\textwidth]{./figures/range.pdf}
+			\end{center}
+	\end{columns}
 \end{frame}
 
 \note[itemize]{
@@ -106,7 +119,24 @@
 	\end{itemize}
 }
 
-\begin{frame}{Introduction -- photon interactions}	
+\begin{frame}{Introduction -- charged particle interactions}
+	\begin{itemize}
+		\setlength\itemsep{2.em}
+		\item energy loss of electrons due to bremsstrahlung
+		\begin{align*}
+			&E(x) = E_0 \, \exp\left(- \frac{x}{X_0} \right) \\[.5em]
+			&X_0\text{: radiation length}
+		\end{align*}
+		
+		\item at critical energy~$E_\mathrm{c}$
+		\begin{align*}
+			\left( \frac{\mathrm{d}E}{\mathrm{d}x}\right)_\mathrm{brems.} = \left( \frac{\mathrm{d}E}{\mathrm{d}x} \right)_\mathrm{ioniz.}
+		\end{align*}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Introduction -- photon interactions}
+	\pause
 	\begin{columns}
 		\column[t]{0.33\textwidth}
 			\centering
@@ -386,7 +416,7 @@
 			\item non-relativistic final state electron			
 			\begin{align*}
 				&\sigma_\mathrm{photo} = \underbrace{4\sqrt{2} \alpha^4 \sigma_\mathrm{Th} \alert{Z^5}  \left( \frac{m_\mathrm{e}c^2}{\alert{E_\gamma}} \right)^{\alert{\frac{7}{2}}}}_{\text{Born approximation}} \cdot \, \overbrace{f(Z, E_\gamma)}^{\mathclap{\substack{\text{correction}\\\text{near K-edge}}}} \\[1em]
-				&\sigma_\mathrm{Th} = \frac{8 \pi}{3} r_\mathrm{e}^2 \quad \text{Thomson cross section}
+				&\sigma_\mathrm{Th} = \frac{8 \pi}{3} r_\mathrm{e}^2 \quad \text{(Thomson cross section)}
 			\end{align*}
 		\end{itemize}
 	\end{itemize}
@@ -553,10 +583,11 @@
 \begin{frame}{Compton scattering -- cross section}
 	\begin{itemize}
 		\setlength\itemsep{1.5em}
-		\item classical limit -- $(\epsilon \ll 1)$
+		\item classical limit -- $(\epsilon := \frac{E_\gamma}{m_\mathrm{e}c^2} \ll 1)$
 		\begin{align*}
 			\sigma = \sigma_\mathrm{Th} \cdot (1 - 2 \epsilon)
 		\end{align*}
+		
 		\item ultrarelativistic limit -- $(\epsilon \gg 1)$
 		\begin{align*}
 			\sigma = \frac{3}{8} \sigma_\mathrm{Th} \cdot \frac{1}{\alert{\epsilon}} \left( \frac{1}{2} + \alert{\ln(2\epsilon)} \right)
@@ -667,12 +698,18 @@
 		
 		\item for $E_\gamma \gg m_\mathrm{e} c^2$ (complete screening)
 		\begin{align*}
-			\sigma_\mathrm{pair} &= \frac{7}{9} \frac{1}{X_0} \frac{A}{N_\mathrm{A} \rho}
+			\sigma_\mathrm{pair} &= \frac{7}{9} \frac{1}{X_0}
+			\begin{array}[t]{@{}c@{}}
+				\tikzmarkin<2>{a}(0.0,-0.4)(-0.0,0.6){\dfrac{A}{N_\mathrm{A} \rho}}\tikzmarkend{a}\\[0.8em]
+				\onslide<2>{\color{red}{= n^{-1}}}
+			\end{array}
 		\end{align*}
 		\item approximate proportionality $\sigma_\mathrm{pair} \propto Z^2$
 		\begin{itemize}
 			\item independent of $E_\gamma$
 		\end{itemize}
+		
+		\pause
 		
 		\item characteristic length of pair production
 			\begin{align*}
@@ -720,7 +757,7 @@
 				\includegraphics[width=0.8\textwidth]{./figures/photoeffect_intro.pdf} 
 				
 				\vspace{0.4cm}
-			\end{minipage} & $Z^5$ & $E_\gamma^{-\frac{7}{2}}$ \\
+			\end{minipage} & $Z^{4 \dots 5}$ & $\left(\frac{1}{E_\gamma}\right)^{n}, \quad n \leq \frac{7}{2}$ \\
 			
 			\begin{minipage}{0.3\textwidth}
 				\centering
@@ -857,7 +894,7 @@
 			
 		\item no transversal spread
 		
-		\item energy evenly split between produced particle pairs
+		\item energy split equally between produced particle pairs
 	\end{itemize}
 \end{frame}
 
@@ -921,7 +958,6 @@
 }
 
 \begin{frame}{Electromagnetic showers -- MC simulation}
-	Longitudinal shower profile in copper (EGS4):	
 	\begin{center}
 		\begin{overpic}[scale=0.8]{./figures/longitudinal_profile_edit.pdf}
 			\put(75, -1){\footnotesize \cite{wigmans}, modified}

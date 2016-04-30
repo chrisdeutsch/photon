@@ -13,14 +13,14 @@ y = 0.5 * erfc( (x - mu) / np.sqrt(2. * sigma**2))
 plt.xlim(0.0, 1.3)
 plt.ylim(0.0, 1.1)
 
-plt.xlabel(r"depth $x$ / $R$")
-plt.ylabel(r"relative count rate")
+plt.xlabel(r"depth $x$ / $R$", fontsize=11)
+plt.ylabel(r"relative count rate", fontsize=11)
 
 plt.axhline(0.5, 0.0, 1. / 1.3, ls=":", c="k")
 plt.axvline(1.0, 0.0, 0.5 / 1.1, ls=":",c="k")
 
 plt.plot(x, y, "-")
 
-plt.tight_layout(pad=0.1)
+plt.tight_layout(pad=0.3)
 plt.savefig("figures/range.pdf")
 plt.close()

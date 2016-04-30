@@ -10,14 +10,14 @@ y = np.exp(-x)
 plt.xlim(0.0, 5.0)
 plt.ylim(0.0, 1.1)
 
-plt.xlabel(r"depth $x$ / $\lambda$")
-plt.ylabel(r"relative count rate")
+plt.xlabel(r"depth $x$ / $\lambda$", fontsize=11)
+plt.ylabel(r"relative count rate", fontsize=11)
 
 plt.axhline(np.exp(-1.0), 0.0, 1. / 5.0, ls=":", c="k")
 plt.axvline(1.0, 0.0, np.exp(-1.0) / 1.1, ls=":",c="k")
 
 plt.plot(x, y, "-")
 
-plt.tight_layout(pad=0.1)
+plt.tight_layout(pad=0.3)
 plt.savefig("figures/lambert_beer_exp.pdf")
 plt.close()
