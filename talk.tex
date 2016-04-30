@@ -1039,76 +1039,54 @@
 \begin{frame}{Detector concepts}
 	\textbf{Objective:}
 	\begin{itemize}
-		\setlength\itemsep{1.em}
-		\item  determine kinematic variables of a photon at some point in time
+		\setlength\itemsep{1.0em}
+		\item  determine kinematic variables of a photon at time~$t$
 		\begin{itemize}
-			\item position
-			\item energy \& momentum
+			\item position $\vec{x}$
+			\item energy $E$ \& momentum $\vec{p}$
 		\end{itemize}
 		(ideally with high resolution \& high rate capability)
 	\end{itemize}
 	\vfill
-	
-	\textbf{Considerations:}
+	\pause
+	\textbf{Detector functions:}
 	\begin{itemize}
-		\setlength\itemsep{1.em}
-		\item photon uncharged \textrightarrow~no direct ionization
-		
-		\item energy transfer to electrons by interaction
+		\setlength\itemsep{1.0em}
+		\item detector acts as a \textbf{conversion medium}
 		\begin{itemize}
-			\item energy deposition ultimately by charged particle interaction\\(ionization, excitation, \dots)
+			\item convert incident photon into multiple electrons
+			\item increased probability with large $Z$ and density $\rho$
 		\end{itemize}
-	\end{itemize}
-	
-\end{frame}
-
-\note[itemize]{
-	\item position: segmentation in space
-	\item 4-momentum: calorimetry / spectroscopy
-}
-
-\begin{frame}{Detector concepts}
+		
+		\pause
+		
+		\item detector material is \textbf{active}
 		\begin{itemize}
-			\setlength\itemsep{1.5em}
-			
-			\item detector acts as a \textbf{conversion medium} 
-			\begin{itemize}
-				\item convert incident photon into multiple electrons
-				\item increased probability with large $Z$ and density $\rho$
-			\end{itemize}
-			
-			\item detector material is \textbf{active}
-			\begin{itemize}
-				\item response proportional to deposited energy
-				\item e.g.\ scintillation light, charge signal (semiconductor/gaseous detectors)\\
-				 -- discussed in upcoming talks
-			\end{itemize} 
-		\end{itemize}			
+			\item response proportional to deposited energy
+			\item e.g.\ scintillation light, charge signal (semiconductor/gaseous detectors)\\
+			-- discussed in upcoming talks
+		\end{itemize} 
+	\end{itemize}
+	
 \end{frame}
 
 \note[itemize]{
-	\item conversion medium:
-	\begin{itemize}
-		\item fully contain any interaction (no missing energy)
-	\end{itemize}
-	
-	\item active:
-	\begin{itemize}
-		\item active to charged particles
-	\end{itemize}
-	
+	\item ultimately the energy deposition works via charged particle interaction
 	\item both parts can be split into different components
 }
 
 \begin{frame}{Detector concepts -- example from nuclear physics}
 	\begin{itemize}
-		\setlength\itemsep{1.5em}
-		\item scintillation counter -- often used for $\gamma$-spectroscopy
+		\setlength\itemsep{1em}
+		\item \textbf{\boldmath$\gamma$-spectroscopy:} typical photon energies $\sim \mathrm{MeV}$
 		
-		\item scintillator must be adequately sized
+		\item conversion and detection in scintillator
 		\begin{itemize}
-			\item avoid energy leaving the detector
+			\item energy deposition by secondary electrons
+			\item emission of visible scintillation light $ \propto E$
 		\end{itemize}
+		
+		\item amplification \& readout by PMT
 	\end{itemize}
 	\vfill
 	\begin{center}
@@ -1119,7 +1097,15 @@
 
 \begin{frame}{Detector concepts -- example from nuclear physics}
 	\begin{itemize}
-		\item various effects clearly visible in $\gamma$-spectra
+		\setlength\itemsep{0.5em}
+		\item possibility of photon leaving the detector (depending on geometry)
+		
+		\begin{itemize}
+			\item after (multiple) Compton scatterings
+			\item from annihilating positron
+		\end{itemize}
+		
+		\item only partial energy deposition -- visible in $\gamma$-spectra
 	\end{itemize}
 	\begin{center}
 		\vspace{0.5cm}
@@ -1128,16 +1114,35 @@
 \end{frame}
 
 \begin{frame}{Detector concepts -- example from HEP}
+	\begin{itemize}
+		\setlength\itemsep{1em}
+		\item \textbf{photon calorimetry:} typical photon energies $\sim \mathrm{GeV}$
+		
+		\item similar to scintillation counter -- but now conversion by em.\ shower
+		\begin{itemize}
+			\item increase in longitudinal size to contain shower
+			\item spacial segmentation (transverse) for position determination
+		\end{itemize}
+		
+		\item allows for reconstruction of photon 4-momentum (using shower energy, impact position \& position of the interaction vertex)
+
+	\end{itemize}
+	\vfill
 	\begin{center}
 		\includegraphics{./figures/calorimeter.pdf}
 	\end{center}
 \end{frame}
 
 \begin{frame}{Detector concepts -- example from HEP}
-	\centering ALICE Photon Spectrometer (PHOS)
+	\centering
+	\textbf{ALICE Photon Spectrometer (PHOS)}
 	\begin{columns}
 		\column[c]{0.6\textwidth}
 		\begin{center}
+			PbWO$_\text{4}$ scintillators with APD-readout
+			
+			\vspace{0.5cm}
+			
 			\begin{overpic}[width=1.0\textwidth]{./figures/alice_phos.jpg}
 				\put(25, -6){\scriptsize CERN, CERN-EX-0603026-03}
 			\end{overpic}
@@ -1164,25 +1169,11 @@
 	\item for accurate energy measurement: particles need to be contained
 }
 
-\begin{frame}{Summary}
-	\begin{itemize}
-		\setlength\itemsep{1.5em}
-		
-		\item differences between charged particle and photon interaction
-		
-		\item dominant interaction processes of photons and their dependencies
-		
-		\item development of electromagnetic showers
-		
-		\item general concepts of photon detection
-		
-		\pause
-		\vfill
-		\begin{center}
-			\LARGE
-			\textbf{Thank you for your attention!}
-		\end{center}
-	\end{itemize}
+\begin{frame}
+	\begin{center}
+		\LARGE
+		\textbf{Thank you for your attention!}
+	\end{center}
 \end{frame}
 
 \begin{frame}{Bibliography}

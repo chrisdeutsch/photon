@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160427212732" modified="D:20160428145124"/>
+<info created="D:20160427212732" modified="D:20160430222753"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -254,19 +254,19 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -1.27404 -95.6815" transformations="translations" pos="392.438 707.47" stroke="black" type="minipage" width="28.348" height="17.27" depth="12.3" valign="top" size="9" style="center">Full-energy peak</text>
-<text matrix="1 0 0 1 -6.05169 -78.482" transformations="translations" pos="317.907 702.692" stroke="black" type="minipage" width="31.214" height="17.27" depth="12.3" valign="top" size="9" style="center">Single escape peak</text>
-<text matrix="1 0 0 1 0.95553 -93.1334" transformations="translations" pos="263.442 696.959" stroke="black" type="minipage" width="35.9916" height="17.27" depth="12.3" valign="top" size="9" style="center">Double escape peak</text>
+<text layer="alpha" matrix="1 0 0 1 -1.27404 -95.6815" transformations="translations" pos="392.438 707.47" stroke="black" type="minipage" width="28.348" height="17.27" depth="12.3" valign="top" size="9" style="center">full-energy peak</text>
+<text matrix="1 0 0 1 -6.05169 -78.482" transformations="translations" pos="317.907 702.692" stroke="black" type="minipage" width="31.214" height="17.27" depth="12.3" valign="top" size="9" style="center">single escape peak</text>
+<text matrix="1 0 0 1 0.95553 -93.1334" transformations="translations" pos="263.442 696.959" stroke="black" type="minipage" width="35.9916" height="17.27" depth="12.3" valign="top" size="9" style="center">double escape peak</text>
 <path matrix="1 0 0 1 0 -96" stroke="black">
 388 624 m
 388 628 l
 </path>
 <text matrix="1 0 0 1 -0.0319478 -101.204" transformations="translations" pos="388 620" stroke="black" type="label" width="11.564" height="6.126" depth="2.16" halign="center" valign="baseline" size="9">$E_\gamma$</text>
-<path matrix="1 0 0 1 0 -96" stroke="black" arrow="pointed/normal">
+<path matrix="1 0 0 1 0 -96" stroke="black" arrow="normal/normal">
 376 608 m
 376 636 l
 </path>
-<text matrix="1 0 0 1 -5.87815 -90.1175" transformations="translations" pos="360 600" stroke="black" type="minipage" width="44" height="16.397" depth="11.43" valign="top" size="9" style="center">Multiple Compton events</text>
+<text matrix="1 0 0 1 -5.87815 -90.1175" transformations="translations" pos="360 600" stroke="black" type="minipage" width="44" height="16.397" depth="11.43" valign="top" size="9" style="center">multiple Compton events</text>
 <text matrix="1 0 0 1 6.61521 -99.4301" transformations="translations" pos="186.226 721.575" stroke="black" type="label" width="12.857" height="7.827" depth="3.04" valign="baseline" size="9">$\frac{\mathrm{d}N}{\mathrm{d}E}$</text>
 <path matrix="1 0 0 1 -42.9224 -96" stroke="black">
 388 624 m
