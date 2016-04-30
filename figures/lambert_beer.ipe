@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160414194342" modified="D:20160414200210"/>
+<info created="D:20160414194342" modified="D:20160430113853"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -270,47 +270,56 @@ h
 140 768 l
 h
 </path>
-<path matrix="1 0 0 1 4 0" stroke="black" pen="1" arrow="normal/small">
-64 760 m
-92 760 l
+<path stroke="0.302 0.686 0.29" pen="1">
+68 760 m
+168.783 760 l
 </path>
-<path matrix="1 0 0 1 4 0" stroke="black" pen="1" arrow="normal/small">
-64 744 m
-92 744 l
+<path stroke="0.302 0.686 0.29" pen="1">
+68 744 m
+108.213 744 l
 </path>
-<path matrix="1 0 0 1 4 0" stroke="black" pen="1" arrow="normal/small">
-64 728 m
-92 728 l
+<path stroke="0.302 0.686 0.29" pen="1">
+68 728 m
+166.171 728 l
 </path>
-<path matrix="1 0 0 1 4 0" stroke="black" pen="1" arrow="normal/small">
-64 712 m
-92 712 l
+<path stroke="0.302 0.686 0.29" pen="1">
+68 712 m
+168.819 712 l
 </path>
-<path matrix="1 0 0 1 4 0" stroke="black" pen="1" arrow="normal/small">
-64 696 m
-92 696 l
+<path stroke="0.302 0.686 0.29" pen="1">
+68 696 m
+128.119 696 l
 </path>
-<path matrix="1 0 0 1 4 0" stroke="black" pen="1" arrow="normal/small">
-64 680 m
-92 680 l
-</path>
-<path matrix="1 0 0 1 -12 0" stroke="black" pen="1" arrow="normal/small">
-156 756 m
-184 756 l
-</path>
-<path matrix="1 0 0 1 -12 0" stroke="black" pen="1" arrow="normal/small">
-156 732 m
-184 732 l
-</path>
-<path matrix="1 0 0 1 -12 0" stroke="black" pen="1" arrow="normal/small">
-156 708 m
-184 708 l
-</path>
-<path matrix="1 0 0 1 -12 0" stroke="black" pen="1" arrow="normal/small">
-156 684 m
-184 684 l
+<path stroke="0.302 0.686 0.29" pen="1">
+68 680 m
+167.593 680 l
 </path>
 <text matrix="1 0 0 1 42 58" transformations="translations" pos="40 716" stroke="black" type="label" width="5.652" height="7.455" depth="0" halign="center" valign="center" size="11">$I$</text>
 <text matrix="1 0 0 1 118 58" transformations="translations" pos="40 716" stroke="black" type="label" width="30.697" height="7.575" depth="0.91" halign="center" valign="center" size="11">$I + \mathrm{d}I$</text>
+<path stroke="0.302 0.686 0.29" arrow="normal/normal">
+168 760 m
+172 760 l
+</path>
+<path stroke="0.302 0.686 0.29" arrow="normal/normal">
+168 728 m
+172 728 l
+</path>
+<path stroke="0.302 0.686 0.29" arrow="normal/normal">
+168 712 m
+172 712 l
+</path>
+<path stroke="0.302 0.686 0.29" arrow="normal/normal">
+168 680 m
+172 680 l
+</path>
+<path stroke="0.302 0.686 0.29" arrow="normal/normal">
+128 696 m
+132 696 l
+</path>
+<path stroke="0.302 0.686 0.29" arrow="normal/normal">
+108 744 m
+112 744 l
+</path>
+<text matrix="1 0 0 1 40 -24" transformations="translations" pos="44 744" stroke="0.302 0.686 0.29" type="label" width="6.254" height="4.698" depth="2.12" halign="center" valign="center" size="11">$\gamma$</text>
 </page>
 </ipe>
